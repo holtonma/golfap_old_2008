@@ -1,0 +1,97 @@
+  [4;36;1mSQL (0.000575)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.002619)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.001952)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000317)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateUsers (1)
+  [4;35;1mSQL (0.001926)[0m   [0mCREATE TABLE users ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(255) DEFAULT NULL, "lname" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "email_alt" varchar(255) DEFAULT NULL, "subscription_id" integer DEFAULT NULL, "subscribed_date" datetime DEFAULT NULL, "send_email" integer DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001881)[0m   [0;1mUPDATE schema_info SET version = 1[0m
+  [4;35;1mSQL (0.000506)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateCourses (2)
+  [4;36;1mSQL (0.002421)[0m   [0;1mCREATE TABLE courses ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255) DEFAULT NULL, "address1" varchar(255) DEFAULT NULL, "address2" varchar(255) DEFAULT NULL, "phone" varchar(255) DEFAULT NULL, "city" varchar(255) DEFAULT NULL, "state" varchar(255) DEFAULT NULL, "rating" decimal DEFAULT NULL, "slope" integer DEFAULT NULL, "num_holes" integer DEFAULT NULL, "total_par" integer DEFAULT NULL, "date_added" datetime DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001993)[0m   [0mUPDATE schema_info SET version = 2[0m
+  [4;36;1mSQL (0.000369)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateCourseholes (3)
+  [4;35;1mSQL (0.002188)[0m   [0mCREATE TABLE courseholes ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer DEFAULT NULL, "par" integer DEFAULT NULL, "yardage" integer DEFAULT NULL, "holenum" integer DEFAULT NULL, "handicap" integer DEFAULT NULL, "date_added" datetime DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001817)[0m   [0;1mUPDATE schema_info SET version = 3[0m
+  [4;35;1mSQL (0.000483)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateRounds (4)
+  [4;36;1mSQL (0.003465)[0m   [0;1mCREATE TABLE rounds ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date_played" datetime DEFAULT NULL, "course_id" integer DEFAULT NULL, "user_id" integer DEFAULT NULL, "weather_id" integer DEFAULT NULL, "holes_played" integer DEFAULT NULL, "clubset_id" integer DEFAULT NULL, "total_score" integer DEFAULT NULL, "total_putts" integer DEFAULT NULL, "total_gir" integer DEFAULT NULL, "fairways_hit" integer DEFAULT NULL, "fairways_right" integer DEFAULT NULL, "fairways_left" integer DEFAULT NULL, "fairway_opps" integer DEFAULT NULL, "sand_saves" integer DEFAULT NULL, "save_opps" integer DEFAULT NULL, "up_downs" integer DEFAULT NULL, "updown_opps" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001943)[0m   [0mUPDATE schema_info SET version = 4[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateClubsets (5)
+  [4;35;1mSQL (0.002390)[0m   [0mCREATE TABLE clubsets ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date_saved" datetime DEFAULT NULL, "user_id" integer DEFAULT NULL, "name" varchar(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001922)[0m   [0;1mUPDATE schema_info SET version = 5[0m
+  [4;35;1mSQL (0.000412)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateClubs (6)
+  [4;36;1mSQL (0.002421)[0m   [0;1mCREATE TABLE clubs ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date_saved" datetime DEFAULT NULL, "type_id" integer DEFAULT NULL, "make" varchar(255) DEFAULT NULL, "model" varchar(255) DEFAULT NULL, "loft_degs" decimal DEFAULT NULL, "lie_degs" decimal DEFAULT NULL, "length_inches" decimal DEFAULT NULL, "grip" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001776)[0m   [0mUPDATE schema_info SET version = 6[0m
+  [4;36;1mSQL (0.000541)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateDiaries (7)
+  [4;35;1mSQL (0.002839)[0m   [0mCREATE TABLE diaries ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "date_saved" datetime DEFAULT NULL, "user_id" integer DEFAULT NULL, "subject" varchar(255) DEFAULT NULL, "body" text DEFAULT NULL) [0m
+  [4;36;1mSQL (0.001706)[0m   [0;1mUPDATE schema_info SET version = 7[0m
+  [4;35;1mSQL (0.000360)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreatePlayedHoles (8)
+  [4;36;1mSQL (0.002892)[0m   [0;1mCREATE TABLE played_holes ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer DEFAULT NULL, "round_id" integer DEFAULT NULL, "hole_id" integer DEFAULT NULL, "score" integer DEFAULT NULL, "putts" integer DEFAULT NULL) [0m
+  [4;35;1mSQL (0.001948)[0m   [0mUPDATE schema_info SET version = 8[0m
+  [4;36;1mSQL (0.000303)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateStrokes (9)
+  [4;35;1mSQL (0.002619)[0m   [0mCREATE TABLE strokes ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL) [0m
+  [4;36;1mSQL (0.002000)[0m   [0;1mUPDATE schema_info SET version = 9[0m
+  [4;35;1mSQL (0.000383)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddStroke (10)
+  [4;36;1mSQL (0.002266)[0m   [0;1mALTER TABLE strokes ADD "user_id" integer[0m
+  [4;35;1mSQL (0.009003)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003647)[0m   [0;1mALTER TABLE strokes ADD "round_id" integer[0m
+  [4;35;1mSQL (0.009752)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003176)[0m   [0;1mALTER TABLE strokes ADD "hole_id" integer[0m
+  [4;35;1mSQL (0.008809)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002872)[0m   [0;1mALTER TABLE strokes ADD "shot_num" integer[0m
+  [4;35;1mSQL (0.008545)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003244)[0m   [0;1mALTER TABLE strokes ADD "shot_type_id" integer[0m
+  [4;35;1mSQL (0.009007)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002927)[0m   [0;1mALTER TABLE strokes ADD "club_id" integer[0m
+  [4;35;1mSQL (0.008923)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003062)[0m   [0;1mALTER TABLE strokes ADD "from" integer[0m
+  [4;35;1mSQL (0.008458)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002655)[0m   [0;1mALTER TABLE strokes ADD "ended_up" integer[0m
+  [4;35;1mSQL (0.006191)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002068)[0m   [0;1mUPDATE schema_info SET version = 10[0m
+  [4;35;1mSQL (0.000313)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddUserpw (11)
+  [4;36;1mSQL (0.002375)[0m   [0;1mALTER TABLE users ADD "password" varchar(255)[0m
+  [4;35;1mSQL (0.008407)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002744)[0m   [0;1mUPDATE schema_info SET version = 11[0m
+  [4;35;1mSQL (0.000499)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddUsersalt (12)
+  [4;36;1mSQL (0.002021)[0m   [0;1mALTER TABLE users ADD "salt" varchar(255)[0m
+  [4;35;1mSQL (0.006006)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.002306)[0m   [0;1mUPDATE schema_info SET version = 12[0m
+  [4;35;1mSQL (0.000271)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to RemoveUserpass (13)
+  [4;36;1mSQL (0.000882)[0m   [0;1mCREATE TEMPORARY TABLE altered_users ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(255) DEFAULT NULL, "lname" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "email_alt" varchar(255) DEFAULT NULL, "subscription_id" integer DEFAULT NULL, "subscribed_date" datetime DEFAULT NULL, "send_email" integer DEFAULT NULL, "password" varchar(255) DEFAULT NULL, "salt" varchar(255) DEFAULT NULL) [0m
+  [4;35;1mSQL (0.000055)[0m   [0mPRAGMA index_list(users)[0m
+  [4;36;1mSQL (0.000353)[0m   [0;1mDROP TABLE users[0m
+  [4;35;1mSQL (0.000250)[0m   [0mCREATE TABLE users ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "fname" varchar(255) DEFAULT NULL, "lname" varchar(255) DEFAULT NULL, "email" varchar(255) DEFAULT NULL, "email_alt" varchar(255) DEFAULT NULL, "subscription_id" integer DEFAULT NULL, "subscribed_date" datetime DEFAULT NULL, "send_email" integer DEFAULT NULL, "salt" varchar(255) DEFAULT NULL) [0m
+  [4;36;1mSQL (0.000054)[0m   [0;1mPRAGMA index_list(altered_users)[0m
+  [4;35;1mSQL (0.000125)[0m   [0mDROP TABLE altered_users[0m
+  [4;36;1mSQL (0.002071)[0m   [0;1mUPDATE schema_info SET version = 13[0m
+  [4;35;1mSQL (0.000491)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to AddUserhashpass (14)
+  [4;36;1mSQL (0.002531)[0m   [0;1mALTER TABLE users ADD "hashed_password" varchar(255)[0m
+  [4;35;1mSQL (0.008722)[0m   [0mVACUUM[0m
+  [4;36;1mSQL (0.003088)[0m   [0;1mUPDATE schema_info SET version = 14[0m
+  [4;35;1mSQL (0.000270)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000666)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.000060)[0m   [0mPRAGMA index_list(clubs)[0m
+  [4;36;1mSQL (0.000056)[0m   [0;1mPRAGMA index_list(clubsets)[0m
+  [4;35;1mSQL (0.000061)[0m   [0mPRAGMA index_list(courseholes)[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mPRAGMA index_list(courses)[0m
+  [4;35;1mSQL (0.000089)[0m   [0mPRAGMA index_list(diaries)[0m
+  [4;36;1mSQL (0.000081)[0m   [0;1mPRAGMA index_list(played_holes)[0m
+  [4;35;1mSQL (0.000102)[0m   [0mPRAGMA index_list(rounds)[0m
+  [4;36;1mSQL (0.000087)[0m   [0;1mPRAGMA index_list(strokes)[0m
+  [4;35;1mSQL (0.000115)[0m   [0mPRAGMA index_list(users)[0m
