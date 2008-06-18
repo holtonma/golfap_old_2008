@@ -21,64 +21,22 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resource :session
   
-  # namespace routes so that we don't get a collision between some of the common ControllerNames: rounds, majors, etc
-  map.namespace(:golf) do |golf|
-    # :majors
-    golf.resources :majors do |majors|
-      majors.resources :years do |years|
-        years.resources :rounds do |rounds|
-        end
-      end
+  # :players
+  map.resources(:players) do |players|
+    players.resources :rounds do |rounds|
+    end
+    players.resources :stats do |stats|
+    end
+    players.resources :friends do |friends|
+    end
+    players.resources :schedules do |schedules|
+    end
+    players.resources :tournaments do |tournaments|
+    end
+    players.resources :clubsets do |clubsets|
     end
   end
   
-  # :golfers
-  map.namespace(:research) do |research|
-    research.resources :golfers do |golfers|
-      golfers.resources :majors do |majors|
-        majors.resources :years do |years|
-          years.resources :rounds do |rounds|
-          end
-        end
-      end
-      golfers.resources :poolstats do |poolstats|
-      end
-    end
-  end
-  
-  # :golfpool -- global leaderboard 
-  map.namespace(:golfpool) do |golfpool|
-    golfpool.resources :majors do |majors|
-      majors.resources :years do |years|
-        years.resources :rounds do |rounds|
-        end
-      end
-    end
-  end
-  
-  # --- authenticate below --- : 
-  
-  # :groups
-  map.namespace(:member) do |authenticated|
-    authenticated.resources :groups do |groups|
-      groups.resources :majors do |majors|
-        majors.resources :years do |years|
-          years.resources :rounds do |rounds|
-          end
-        end
-      end
-      groups.resources :messages do |messages|
-      end
-      groups.resources :patrons do |patrons|
-        patrons.resources :squads do |squads|
-        end
-        patrons.resources :settings do |settings|
-        end
-        patrons.resources :friends do |friends|
-        end
-      end
-    end
-  end
   
   # :admin
   map.namespace(:admin) do |admin|
