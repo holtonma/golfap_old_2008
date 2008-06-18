@@ -9,16 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 14) do
+ActiveRecord::Schema.define(:version => 16) do
 
   create_table "clubs", :force => true do |t|
     t.datetime "date_saved"
     t.integer  "type_id"
     t.string   "make"
     t.string   "model"
-    t.decimal  "loft_degs"
-    t.decimal  "lie_degs"
-    t.decimal  "length_inches"
+    t.integer  "loft_degs",     :limit => 10, :precision => 10, :scale => 0
+    t.integer  "lie_degs",      :limit => 10, :precision => 10, :scale => 0
+    t.integer  "length_inches", :limit => 10, :precision => 10, :scale => 0
     t.string   "grip"
   end
 
@@ -26,6 +26,20 @@ ActiveRecord::Schema.define(:version => 14) do
     t.datetime "date_saved"
     t.integer  "user_id"
     t.string   "name"
+  end
+
+  create_table "coaches", :force => true do |t|
+    t.string   "fname"
+    t.string   "lname"
+    t.string   "email"
+    t.integer  "school_id"
+    t.string   "description"
+    t.integer  "state_id"
+    t.integer  "zip"
+    t.string   "url"
+    t.integer  "team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "courseholes", :force => true do |t|
@@ -44,7 +58,7 @@ ActiveRecord::Schema.define(:version => 14) do
     t.string   "phone"
     t.string   "city"
     t.string   "state"
-    t.decimal  "rating"
+    t.integer  "rating",     :limit => 10, :precision => 10, :scale => 0
     t.integer  "slope"
     t.integer  "num_holes"
     t.integer  "total_par"
@@ -56,6 +70,17 @@ ActiveRecord::Schema.define(:version => 14) do
     t.integer  "user_id"
     t.string   "subject"
     t.text     "body"
+  end
+
+  create_table "instructors", :force => true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "state_id"
+    t.integer  "zip"
+    t.string   "url"
+    t.integer  "course_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "played_holes", :force => true do |t|
@@ -95,6 +120,16 @@ ActiveRecord::Schema.define(:version => 14) do
     t.integer "club_id"
     t.integer "from"
     t.integer "ended_up"
+  end
+
+  create_table "tgolfer", :primary_key => "GolferID", :force => true do |t|
+    t.string  "GolferFirstName",    :limit => 50, :default => "", :null => false
+    t.string  "GolferLastName",     :limit => 50, :default => "", :null => false
+    t.integer "CurrentScoreRelPar", :limit => 6
+    t.text    "GolferMemo"
+    t.integer "DegsofWallyVal",     :limit => 4
+    t.string  "GolferImage",        :limit => 50
+    t.integer "active",             :limit => 6,  :default => 0,  :null => false
   end
 
   create_table "users", :force => true do |t|
