@@ -22,7 +22,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   
   # :players
-  map.resources(:players) do |players|
+  map.resources :players do |players|
     players.resources :rounds do |rounds|
     end
     players.resources :stats do |stats|
@@ -32,8 +32,52 @@ ActionController::Routing::Routes.draw do |map|
     players.resources :schedules do |schedules|
     end
     players.resources :tournaments do |tournaments|
+      tournaments.resources :scorecards do |scorecards|
+      end
     end
     players.resources :clubsets do |clubsets|
+    end
+  end
+  
+  # states / courses:tees   ...states/ tournaments:types:years
+  map.resources(:states) do |states|
+    states.resources :courses do |courses|
+      courses.resources :tees do |tees|
+      end
+    end
+    states.resources :tournaments do |tournaments|
+      tournaments.resources :types do |types|
+        types.resources :years do |years|
+        end
+      end
+    end
+    states.resources :weather do |weather|
+      weather.resources :date do |date|
+      end
+    end
+  end
+  
+  # leaderboard by :id
+  map.resources :leaderboards do |leaderboard|
+  end
+  
+  # leaderboards
+  map.namespace(:leaderboards) do |lb|
+    lb.resources :types do |types|
+      types.resources :states do |states|
+        states.resources :years do |years|
+        end
+      end
+    end
+  end
+  
+  # equipment!
+  map.namespace(:equipment) do |eq|
+    eq.resources :types do |types|
+      types.resources :manufacturers do |manufacturers|
+        manufacturers.resources :models do |models|
+        end
+      end
     end
   end
   
