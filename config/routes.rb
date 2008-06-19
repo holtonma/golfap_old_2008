@@ -57,6 +57,16 @@ ActionController::Routing::Routes.draw do |map|
     end
   end
   
+  #settings
+  map.resources :settings do |settings|
+  end
+  
+  #news 
+  map.resources :news do |news|
+    news.resources :category do |category|
+    end
+  end
+  
   # leaderboard by :id
   map.resources :leaderboards do |leaderboard|
   end

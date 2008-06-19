@@ -1,4 +1,5 @@
-class PlayersController < ApplicationController
+class CourseController < ApplicationController
+  
   before_filter :init #, except => :create
   
   def init
@@ -7,7 +8,9 @@ class PlayersController < ApplicationController
   end
   
   def index
-   
+  end
+
+  def create
   end
 
   def new
@@ -16,13 +19,12 @@ class PlayersController < ApplicationController
   def edit
   end
 
-  def show
+  def update
   end
 
-  def update
+  def show
   end
 
   def destroy
   end
-  
 end

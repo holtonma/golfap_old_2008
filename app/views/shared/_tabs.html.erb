@@ -9,28 +9,17 @@
 
 <div id="nav" style="min-width:820px;padding-top:3px;">
 <ul style="text-align:center;">
-  <li id="t-group">
-		<!-- <a href="major.cfm"><div>Home</div></a> --> 
-		<%= link_to "<div>Home</div>", player_path(@user_id) %> 
-	</li> <%# <a href="group.cfm"><div>My Group's</div><div>Leaderboard</div></a> %>
-  <li id="t-major">
-	  <a href="major.cfm"><div>My Stats</div></a><%# link_to "<div>My Stats</div>", member_group_path(@group_id) %>
-	</li>
-  <li id="t-major">
-	  <a href="major.cfm"><div>News</div></a></li><%# link_to "<div>News</div>", member_group_path(@group_id) %>
-  <li id="t-message">
-	  <a href="message.cfm"><div>Courses</div></a></li><%# link_to "<div>Courses</div>", member_group_path(@group_id) %>
-  <li id="t-photos">
-	  <a href="photos.cfm"><div>Photos</div></a></li><%# link_to "<div>Photos</div>", member_group_path(@group_id) %>
-  <li id="t-home">
-	  <a href="home.cfm"><div>Tournaments</div></a></li><%# link_to "<div>Tournaments</div>", member_group_path(@group_id) %>
-	<li id="t-home">
-		<a href="home.cfm"><div>Equipment</div></a></li><%# link_to "<div>Equipment</div>", member_group_path(@group_id) %>
-	<li id="t-settings">
-		<a href="settings.cfm"><div>My Settings</div></a></li><%# link_to "<div>My Settings</div>", member_group_path(@group_id) %>
+  <li id="t-group"><%= link_to "<div>Home</div>", player_path(@user_id) %></li>
+  <li id="t-major"><%= link_to "<div>My Stats</div>", player_stats_path(@user_id) %></li>
+  <li id="t-major"><%= link_to "<div>News</div>", news_index_path() %></li>
+  <li id="t-message"><%= link_to "<div>Courses</div>", state_courses_path(@state_id) %></li>
+  <li id="t-photos"><%# link_to "<div>Photos</div>", member_group_path(@group_id) %><a href="photos.cfm"><div>Photos</div></a></li></li>
+	<li id="t-home"><%= link_to "<div>Leaderboards</div>", leaderboards_path() %></li>
+  <li id="t-home"><%= link_to "<div>Tournaments</div>", state_tournaments_path(@state_id) %></li>
+	<li id="t-home"><%= link_to "<div>Equipment</div>", equipment_types_path() %></li>
+	<li id="t-settings"><%= link_to "<div>My Settings</div>", setting_path(@user_id) %></li>
 	<%# if session id = 1 (me) %>
-	<li id="t-admin">
-		<a href="admin.cfm"><div>Admin</div></a></li><%# link_to "<div>Admin</div>", member_group_path(@group_id) %>
+	<li id="t-admin"><a href="admin.cfm"><div>Admin</div></a></li><%# link_to "<div>Admin</div>", member_group_path(@group_id) %>
 </ul>
 </div>
 <div id="poweredby" style="float:right;">
