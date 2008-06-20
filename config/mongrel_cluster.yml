@@ -1,0 +1,6 @@
+---
+port: 8000
+pid_file: /tmp/`hostname`-mongrel.pid
+servers: 4
+environment: production
+#address: 127.0.0.1
