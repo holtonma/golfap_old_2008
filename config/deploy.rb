@@ -1,3 +1,6 @@
+require 'erb'
+require 'config/accelerator/accelerator_tasks'
+  
 set :application, "golfap"
 set :repository,  "git@github.com:holtonma/golfap.git"
 
@@ -10,13 +13,12 @@ set :repository,  "git@github.com:holtonma/golfap.git"
 # your SCM below:
 # set :scm, :subversion
 
-role :app, "gmneydaa.joyent.us"
-role :web, "gmneydaa.joyent.us"
-role :db,  "gmneydaa.joyent.us", :primary => true
+role :app, "golfapp.com" #"gmneydaa.joyent.us"
+role :web, "golfapp.com" #"gmneydaa.joyent.us"
+role :db,  "golfapp.com", :primary => true #"gmneydaa.joyent.us"
 
 
-require 'erb'
-  require 'config/accelerator/accelerator_tasks'
+
 
   set :application, "website" 
   set :repository, "git@github.com:your_username/website.git" 
