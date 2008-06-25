@@ -19,9 +19,9 @@ set :repository,  "git@github.com:holtonma/golfap.git"
 
 
   default_run_options[:pty] = true
-  set :domain, '8.12.36.73' #Your Accelerators public IP address
+  set :domain, '8.12.36.73' #Your Accelerator's public IP address
   set :deploy_to, "/var/www/apps/#{application}" 
-  set :user, 'admin'
+  set :user, 'deployer'
   set :scm, :git
   set :scm_username, "holtonma" 
   set :scm_passphrase, "golfap" 
