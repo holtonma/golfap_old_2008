@@ -15,7 +15,6 @@ role :web, "gmneydaa.joyent.us"
 role :db,  "gmneydaa.joyent.us", :primary => true
 
 
-
 require 'erb'
   require 'config/accelerator/accelerator_tasks'
 
