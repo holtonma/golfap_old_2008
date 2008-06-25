@@ -13,15 +13,10 @@ set :repository,  "git@github.com:holtonma/golfap.git"
 # your SCM below:
 # set :scm, :subversion
 
-role :app, "golfapp.com" #"gmneydaa.joyent.us"
-role :web, "golfapp.com" #"gmneydaa.joyent.us"
-role :db,  "golfapp.com", :primary => true #"gmneydaa.joyent.us"
+# role :app, "golfapp.com" #"gmneydaa.joyent.us"
+# role :web, "golfapp.com" #"gmneydaa.joyent.us"
+# role :db,  "golfapp.com", :primary => true #"gmneydaa.joyent.us"
 
-
-
-
-  set :application, "website" 
-  set :repository, "git@github.com:your_username/website.git" 
 
   default_run_options[:pty] = true
   set :domain, '8.12.36.73' #Your Accelerators public IP address
