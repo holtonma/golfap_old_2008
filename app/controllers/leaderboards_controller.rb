@@ -1,4 +1,5 @@
-class PlayersController < ApplicationController
+class LeaderboardsController < ApplicationController
+  
   before_filter :init #, except => :create
   
   def init

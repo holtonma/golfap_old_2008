@@ -3,7 +3,7 @@ class NewsController < ApplicationController
   
   def init
     @user_id = 1 #this will be modified to authenticate / obtain session.user_id or 0 if not logged in
-    @user_id
+    @state_id = 30 # this will be based off ip address(?) if not logged in
   end
   
   def index

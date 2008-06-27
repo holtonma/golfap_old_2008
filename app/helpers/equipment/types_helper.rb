@@ -1,0 +1,2 @@
+module Equipment::TypesHelper
+end
