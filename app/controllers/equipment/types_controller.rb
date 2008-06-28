@@ -1,5 +1,13 @@
 class Equipment::TypesController < ApplicationController
-
+  
+  include ApplicationHelper
+  
+  before_filter :init #, except => :create
+  
+  def init
+    user_info
+  end
+  
   def index
   end
 

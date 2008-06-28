@@ -1,5 +1,5 @@
-class StatsController < ApplicationController
-  
+class RoundsController < ApplicationController
+
   include ApplicationHelper
   
   before_filter :init #, except => :create
@@ -8,7 +8,11 @@ class StatsController < ApplicationController
     user_info
   end
   
+  # /players/:player_id/rounds     {:controller=>"rounds", :action=>"index"}
   def index
+  end
+
+  def show
   end
 
   def create
@@ -23,10 +27,6 @@ class StatsController < ApplicationController
   def update
   end
 
-  def show
-  end
-
   def destroy
   end
-  
 end
