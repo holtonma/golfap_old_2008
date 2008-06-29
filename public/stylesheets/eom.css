@@ -906,90 +906,109 @@ border:0pt none;
 font-weight:bold;
 }
 .data li a:hover {
-color:#333333;
+	color:#333333;
 }
 
 #golfrounds {
-margin-left:81px;
-margin-top:18px;
+	margin-left:81px;
+	margin-top:18px;
 }
 #golfrounds h3 {
-border-bottom:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
 }
 .golfrounds, .pagelist {
-list-style-image:none;
-list-style-position:outside;
-list-style-type:none;
-margin:0pt 0pt 60px;
-padding:0pt;
-width:100%;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0pt 0pt 60px;
+	padding:0pt;
+	width:100%;
 }
 .golfrounds li.golfround {
-border-bottom:1px solid #EEEEEE;
-line-height:160%;
-padding:12px !important;
-position:relative;
+	border-bottom:1px solid #EEEEEE;
+	line-height:160%;
+	padding:12px !important;
+	position:relative;
 }
 .day-break, .time-span {
--moz-border-radius-bottomleft:4px;
--moz-border-radius-bottomright:4px;
--moz-border-radius-topleft:4px;
--moz-border-radius-topright:4px;
-background-color:#EEEEEE;
-display:block;
-left:-81px;
-padding:9px;
-position:absolute;
-text-align:center;
-top:9px;
-width:60px;
+	-moz-border-radius-bottomleft:4px;
+	-moz-border-radius-bottomright:4px;
+	-moz-border-radius-topleft:4px;
+	-moz-border-radius-topright:4px;
+	background-color:#EEEEEE;
+	display:block;
+	left:-81px;
+	padding:9px;
+	position:absolute;
+	text-align:center;
+	top:9px;
+	width:60px;
 }
 li.daybreak {
-border-top:2px solid #E4E4E4;
+	border-top:2px solid #E4E4E4;
 }
 span.day {
-display:block;
-font-size:92%;
-font-weight:bold;
+	display:block;
+	font-size:92%;
+	font-weight:bold;
 }
 
 li.golfround ul {
-list-style-image:none;
-list-style-position:outside;
-list-style-type:none;
-padding-left:10px;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	padding-left:10px;
 }
 li.golfround ul li {
-background:transparent url(../images/app/bullet.gif) no-repeat scroll 2px 50%;
-padding-left:18px;
+	background:transparent url(../images/app/bullet.gif) no-repeat scroll 2px 50%;
+	padding-left:18px;
 }
 .golfrounds li blockquote p {
-color:#444444;
-font-size:92%;
-margin:0pt 0pt 10px !important;
-padding:0pt !important;
+	color:#444444;
+	font-size:92%;
+	margin:0pt 0pt 10px !important;
+	padding:0pt !important;
 }
 .golfrounds .event-date {
-color:#999999;
-font-family:Georgia,Times,serif;
-position:absolute;
-top:18px;
+	color:#999999;
+	font-family:Georgia,Times,serif;
+	position:absolute;
+	top:18px;
 }
 .golfrounds .avatar, .msg .avatar {
-height:25px;
-padding:2px;
-width:25px;
+	height:25px;
+	padding:2px;
+	width:25px;
 }
 span.num {
-color:#777777;
+	color:#777777;
 }
 #golfrounds .emeta a {
-color:#555555;
+	color:#555555;
 }
 #golfrounds .emeta a:hover {
-color:#111111;
+	color:#111111;
 }
 
 .foursome {
 	float:left;
+	padding-top: 0px;
 }
+
+.rtype {
+	width: 68px;
+	background-color: #555;
+	color: #fff;
+	position: absolute;
+	right: 4px;
+	top: 10px;
+	text-align: center;
+	padding-bottom: 2px;
+	font-size: 88%;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 4px;
+	margin-bottom: 2px;
+}
+
+.rtournament { background-color: #2CB200;}
+.rpractice { background-color: #bbb;}
