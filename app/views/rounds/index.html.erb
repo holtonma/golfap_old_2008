@@ -1,26 +1,71 @@
+<% @name = "Mark Holton" %>
+<% @num_rounds = 3 %>
+<% @playing_partner = [] %>
+<% @playing_partner[1] = "Tim Parker" %>
+<% @playing_partner[2] = "Tom Mino" %>
 
 	<div id="main">
 		<div id="subtab-nav">
 			<ul><!-- class="subnav secondlevel"-->
-				<li id="t-roundmain" class="selected"><a href="">Main</a></li>
+				<li id="t-roundmain" class="selected"><a href="">Rounds Main</a></li>
 				<li><a href="">Find Rounds</a></li>
 			</ul>
 		</div>
 		<div id="detail-nav">
 			<ul class="clear">
-				<li><%= link_to "New Round", new_player_round_path(@user_id) %></li> 
 				<%# new_player_round GET  /players/:player_id/rounds/new   {:controller=>"rounds", :action=>"new"} %>
-				<li><a href="">Last 5 Rounds</a></li>
+				<li><a href="">Last 10 Rounds</a></li>
+				<li><%= link_to "New Round", new_player_round_path(@user_id) %></li> 
 				<li><a href="">[Star] Rounds</a></li>
 				<li><a href="">Find Round: [box]</a></li>
 				<li><a href="">Best Rounds: [box]</a></li>
 			</ul>
 		</div>
-		<div id="flashes"></div>
-		<div id="page-top"></div>
-		<div id="main-content"></div>
+		
+		<div id="flashes">
+			<!-- -->
+		</div>
+		
+		<div id="page-top">
+		  <div class="greet clear">
+			  <a href="/"><img class="avatar" title="[<%= @name %>]" src="/images/avatar.gif" alt="[<%= @name %>]" border="0"></a>
+			  <h3 class="nameplate"><%= @name %></h3>
+			  <p class="gmeta">
+			  	You have played <a href=""><%= @num_rounds %> rounds</a> in the last month.
+			  </p>
+			</div>
+		</div>
+		<div align="center"><h2>Your recent golf rounds:</h2></div>
+		<div id="main-content" class="clear">
+			<div id="golf_rounds"> <%# events %>
+				<ul class="data golfrounds">
+					<li class="golfround clear">
+						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
+						<a title="" href="">88 (+16)</a> at Druid's Glen Golf Club.
+						<div style="border: 0px dotted silver;text-align:right;"><b>onesome:</b> <a href="">[enter playing partners]</a></div>
+						<p class="day-break">
+							<span class="day">Saturday</span>
+							<span class="num">June 5th</span>
+						</p>
+					</li>
+					<li class="golfround clear">
+						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
+						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+							<span>
+								<b>threesome:</b> <a href="">Tim Parker</a>, Tom Mino ( <a href="">invite</a> )
+							</span>
+						</div>
+						<p class="day-break">
+							<span class="day">Sunday</span>
+							<span class="num">June 6th</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
   </div>
 	
 
 <div style="clear:left;"></div>
-<p><h1>Rounds#index</h1>Find me in app/views/rounds/index.html.erb</p>
+<p align="center">Find me in app/views/rounds/index.html.erb</p>

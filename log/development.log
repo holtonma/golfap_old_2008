@@ -9007,3 +9007,1169 @@ Rendered shared/_header (0.00015)
 Rendered shared/_tabs (0.00028)
 Rendered shared/_footer (0.00015)
 Completed in 0.00545 (183 reqs/sec) | Rendering: 0.00274 (50%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds/new]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:49:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00031)
+Rendered shared/_footer (0.00016)
+Completed in 0.00685 (145 reqs/sec) | Rendering: 0.00393 (57%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:53:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00017)
+Completed in 0.00673 (148 reqs/sec) | Rendering: 0.00388 (57%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-28 17:53:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/avatar.gif" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:54:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00016)
+Completed in 0.00722 (138 reqs/sec) | Rendering: 0.00445 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-28 17:54:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/avatar.gif" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:56:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00016)
+Completed in 0.00568 (176 reqs/sec) | Rendering: 0.00273 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-06-28 17:56:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/images/avatar.gif" with {:method=>:get}):
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:57:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00025)
+Completed in 0.00515 (194 reqs/sec) | Rendering: 0.00247 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 17:57:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00014)
+Completed in 0.00699 (143 reqs/sec) | Rendering: 0.00392 (56%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:00:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00031)
+Rendered shared/_footer (0.00017)
+Completed in 0.00593 (168 reqs/sec) | Rendering: 0.00295 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:00:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00525 (190 reqs/sec) | Rendering: 0.00248 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:01:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00557 (179 reqs/sec) | Rendering: 0.00253 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:01:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00526 (190 reqs/sec) | Rendering: 0.00246 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:01:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00016)
+Completed in 0.00725 (137 reqs/sec) | Rendering: 0.00442 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:02:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00016)
+Completed in 0.00556 (179 reqs/sec) | Rendering: 0.00273 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:02:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00021)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00016)
+Completed in 0.00537 (186 reqs/sec) | Rendering: 0.00259 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:04:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00512 (195 reqs/sec) | Rendering: 0.00247 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:05:43) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00016)
+Completed in 0.00508 (196 reqs/sec) | Rendering: 0.00240 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:05:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00655 (152 reqs/sec) | Rendering: 0.00348 (53%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:06:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00017)
+Completed in 0.00558 (179 reqs/sec) | Rendering: 0.00263 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:09:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00632 (158 reqs/sec) | Rendering: 0.00351 (55%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:13:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00676 (147 reqs/sec) | Rendering: 0.00398 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:13:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00021)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00018)
+Completed in 0.00671 (149 reqs/sec) | Rendering: 0.00274 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:17:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00034)
+Rendered shared/_footer (0.00016)
+Completed in 0.00690 (144 reqs/sec) | Rendering: 0.00414 (59%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:18:35) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00544 (183 reqs/sec) | Rendering: 0.00253 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:18:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00530 (188 reqs/sec) | Rendering: 0.00245 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:19:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00016)
+Completed in 0.00715 (139 reqs/sec) | Rendering: 0.00412 (57%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:19:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00020)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00017)
+Completed in 0.00945 (105 reqs/sec) | Rendering: 0.00380 (40%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:20:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00039)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00017)
+Completed in 0.00858 (116 reqs/sec) | Rendering: 0.00491 (57%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:21:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00017)
+Completed in 0.00693 (144 reqs/sec) | Rendering: 0.00420 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:21:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00509 (196 reqs/sec) | Rendering: 0.00238 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:22:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00016)
+Completed in 0.07466 (13 reqs/sec) | Rendering: 0.07194 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:23:29) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00015)
+Completed in 0.00713 (140 reqs/sec) | Rendering: 0.00427 (59%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:24:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00525 (190 reqs/sec) | Rendering: 0.00249 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:24:40) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00016)
+Completed in 0.00545 (183 reqs/sec) | Rendering: 0.00257 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:27:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00016)
+Completed in 0.00717 (139 reqs/sec) | Rendering: 0.00440 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:28:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00537 (186 reqs/sec) | Rendering: 0.00257 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:28:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00062)
+Rendered shared/_footer (0.00016)
+Completed in 0.00580 (172 reqs/sec) | Rendering: 0.00302 (52%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:28:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00721 (138 reqs/sec) | Rendering: 0.00443 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:28:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00016)
+Completed in 0.00745 (134 reqs/sec) | Rendering: 0.00470 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:29:13) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00017)
+Completed in 0.07727 (12 reqs/sec) | Rendering: 0.07435 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:31:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00034)
+Rendered shared/_footer (0.00015)
+Completed in 0.00748 (133 reqs/sec) | Rendering: 0.00454 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:32:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00727 (137 reqs/sec) | Rendering: 0.00444 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:33:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00031)
+Rendered shared/_footer (0.00015)
+Completed in 0.00721 (138 reqs/sec) | Rendering: 0.00445 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:33:54) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00724 (138 reqs/sec) | Rendering: 0.00439 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:34:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00022)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00018)
+Completed in 0.00909 (110 reqs/sec) | Rendering: 0.00579 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:35:41) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00019)
+Completed in 0.00785 (127 reqs/sec) | Rendering: 0.00500 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:37:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00538 (185 reqs/sec) | Rendering: 0.00260 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:38:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00763 (131 reqs/sec) | Rendering: 0.00485 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:38:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00553 (180 reqs/sec) | Rendering: 0.00260 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:39:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00016)
+Completed in 0.00539 (185 reqs/sec) | Rendering: 0.00261 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:39:27) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00015)
+Completed in 0.00545 (183 reqs/sec) | Rendering: 0.00266 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:40:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00767 (130 reqs/sec) | Rendering: 0.00487 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:41:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=) on line #3 of rounds/index.html.erb:
+1: <% @name = "Mark Holton" %>
+2: <% @num_rounds = 3 %>
+3: <% @playing_parter[1] = "Tim Parker" %>
+4: <% @playing_parter[2] = "Tom Mino" %>
+5: 
+6: 	<div id="main">
+
+    app/views/rounds/index.html.erb:3:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:42:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]=) on line #3 of rounds/index.html.erb:
+1: <% @name = "Mark Holton" %>
+2: <% @num_rounds = 3 %>
+3: <% @playing_partner[1] = "Tim Parker" %>
+4: <% @playing_partner[2] = "Tom Mino" %>
+5: 
+6: 	<div id="main">
+
+    app/views/rounds/index.html.erb:3:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:42:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00882 (113 reqs/sec) | Rendering: 0.00529 (59%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:44:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00813 (122 reqs/sec) | Rendering: 0.00538 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:44:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00014)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00534 (187 reqs/sec) | Rendering: 0.00253 (47%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:44:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00017)
+Completed in 0.00847 (118 reqs/sec) | Rendering: 0.00278 (32%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:45:30) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00016)
+Completed in 0.00846 (118 reqs/sec) | Rendering: 0.00551 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:45:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00819 (122 reqs/sec) | Rendering: 0.00540 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:46:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00014)
+Completed in 0.00784 (127 reqs/sec) | Rendering: 0.00522 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:46:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00024)
+Rendered shared/_tabs (0.00042)
+Rendered shared/_footer (0.00101)
+Completed in 0.00701 (142 reqs/sec) | Rendering: 0.00412 (58%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:47:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00031)
+Rendered shared/_footer (0.00016)
+Completed in 0.00873 (114 reqs/sec) | Rendering: 0.00587 (67%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:48:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00831 (120 reqs/sec) | Rendering: 0.00552 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:49:09) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00840 (118 reqs/sec) | Rendering: 0.00546 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:49:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00812 (123 reqs/sec) | Rendering: 0.00539 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:50:07) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00016)
+Completed in 0.00848 (117 reqs/sec) | Rendering: 0.00560 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:50:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00846 (118 reqs/sec) | Rendering: 0.00566 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:50:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00814 (122 reqs/sec) | Rendering: 0.00539 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:50:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00837 (119 reqs/sec) | Rendering: 0.00569 (67%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:50:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00017)
+Completed in 0.00832 (120 reqs/sec) | Rendering: 0.00553 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:51:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00833 (120 reqs/sec) | Rendering: 0.00546 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:51:28) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00017)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00021)
+Completed in 0.00818 (122 reqs/sec) | Rendering: 0.00534 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:52:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00018)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.00789 (126 reqs/sec) | Rendering: 0.00520 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:52:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00813 (122 reqs/sec) | Rendering: 0.00528 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:53:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00800 (124 reqs/sec) | Rendering: 0.00514 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:53:34) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00015)
+Completed in 0.00776 (128 reqs/sec) | Rendering: 0.00495 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:53:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00016)
+Completed in 0.00818 (122 reqs/sec) | Rendering: 0.00515 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:54:03) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00019)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00016)
+Completed in 0.00908 (110 reqs/sec) | Rendering: 0.00594 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:54:15) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00016)
+Completed in 0.00819 (122 reqs/sec) | Rendering: 0.00535 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-28 18:54:26) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00016)
+Completed in 0.00789 (126 reqs/sec) | Rendering: 0.00513 (65%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
