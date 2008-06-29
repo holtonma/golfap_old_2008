@@ -3,15 +3,17 @@
 		<div id="subtab-nav">
 			<ul><!-- class="subnav secondlevel"-->
 				<li id="t-roundmain" class="selected"><a href="">Main</a></li>
-				<li><a href="">Filter Rounds</a></li>
+				<li><a href="">Find Rounds</a></li>
 			</ul>
 		</div>
 		<div id="detail-nav">
 			<ul class="clear">
-				<li><a href="">New Round</a></li>
-				<li><a href="">Last 10 rounds</a></li>
-				<li><a href="">New Goal</a></li>
-				<li><a href="">New page</a></li>
+				<li><%= link_to "New Round", new_player_round_path(@user_id) %></li> 
+				<%# new_player_round GET  /players/:player_id/rounds/new   {:controller=>"rounds", :action=>"new"} %>
+				<li><a href="">Last 5 Rounds</a></li>
+				<li><a href="">[Star] Rounds</a></li>
+				<li><a href="">Find Round: [box]</a></li>
+				<li><a href="">Best Rounds: [box]</a></li>
 			</ul>
 		</div>
 		<div id="flashes"></div>
