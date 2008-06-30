@@ -17,9 +17,19 @@
 				<%# new_player_round GET  /players/:player_id/rounds/new   {:controller=>"rounds", :action=>"new"} %>
 				<li><a href="">Last 10 Rounds</a></li>
 				<li><%= link_to "New Round", new_player_round_path(@user_id) %></li> 
-				<li><a href="">[Star] Rounds</a></li>
-				<li><a href="">Find Round: [box]</a></li>
-				<li><a href="">Best Rounds: [box]</a></li>
+				<li><a href="">Starred Rounds</a></li>
+				<li id="t-findrounds">
+					<a href="">
+						Find Round:&nbsp;&nbsp;
+						<em>more</em>
+					</a>
+					<ul class="submenu wbadges" style="display:none;">
+						<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>
+						<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>
+						<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>
+					</ul>
+				</li>
+				<li id="t-bestrounds"><a href="">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>
 			</ul>
 		</div>
 		
@@ -38,19 +48,14 @@
 		</div>
 		<div align="center"><h2>Your recent golf rounds:</h2></div>
 		<div id="main-content" class="clear">
-			<div id="golf_rounds"> <%# events %>
+			<div id="golfrounds"> <%# events %>
 				<ul class="data golfrounds">
 					<li class="golfround clear">
 						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
 						<a title="" href="">88 (+16)</a> at Druid's Glen Golf Club.
 						<div style="border: 0px dotted silver;text-align:right;"><b>onesome:</b> <a href="">[enter playing partners]</a></div>
-						<p class="day-break">
-							<span class="day">Saturday</span>
-							<span class="num">June 5th</span>
-						</p>
-						<span class="rtype rpractice">
-							practice
-						</span>
+						<p class="day-break"><span class="day">Saturday</span><span class="num">June 5th</span></p>
+						<span class="rtype rpractice">practice</span>
 					</li>
 					<li class="golfround clear">
 						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
