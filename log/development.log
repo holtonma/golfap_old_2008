@@ -19328,3 +19328,47 @@ Rendered shared/_header (0.00014)
 Rendered shared/_tabs (0.00030)
 Rendered shared/_footer (0.00015)
 Completed in 0.02346 (42 reqs/sec) | Rendering: 0.00992 (42%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds?m=8&y=2007]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-07-01 21:40:02) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"m"=>"8", "y"=>"2007", "player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00014)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00014)
+Completed in 0.01798 (55 reqs/sec) | Rendering: 0.00464 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds?m=8&y=2007]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-07-01 21:40:04) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"m"=>"1", "y"=>"2008", "player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00032)
+Rendered shared/_footer (0.00016)
+Completed in 0.01948 (51 reqs/sec) | Rendering: 0.00532 (27%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds?m=1&y=2008]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-07-01 21:40:06) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"m"=>"11", "y"=>"2007", "player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00015)
+Completed in 0.01953 (51 reqs/sec) | Rendering: 0.00499 (25%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds?m=11&y=2007]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-07-01 22:46:33) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"m"=>"11", "y"=>"2007", "player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.02191 (45 reqs/sec) | Rendering: 0.00496 (22%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds?m=11&y=2007]
