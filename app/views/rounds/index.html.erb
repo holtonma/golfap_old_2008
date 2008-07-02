@@ -16,8 +16,12 @@
 		<div id="detail-nav">
 			<ul class="clear">
 				<%# new_player_round GET  /players/:player_id/rounds/new   {:controller=>"rounds", :action=>"new"} %>
-				<li><a href="">Last 10 Rounds</a></li>
-				<li><%= link_to "New Round", new_player_round_path(@user_id) %></li> 
+				<li>
+					<!-- <a href="">Last 10 Rounds</a> -->
+					<%= link_to "Last 10 rounds", url_for(:n => 10), :class => "" %> <!-- url_for(:n => 10) -->
+				  <%# url_for(:id => "foo", :foobar => 200, :baz => "23k")%>
+				</li>
+				<li><%= link_to "New Round", new_player_round_path(@user_id), :class => "" %></li> 
 				<li><a href="">Starred Rounds</a></li>
 				<li id="t-findrounds">
 					<a href="">
@@ -41,7 +45,7 @@
 		<div id="page-top">
 		  <div class="greet clear">
 			  <a href="/">
-				  <%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
+				  <%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "", :size => "48x48") %>
 				</a>
 			  <h3 class="nameplate"><%= @name %></h3>
 			  <p class="gmeta">
@@ -114,18 +118,21 @@
 	  <div id="months-block" class="sideblock">
 		  <h3>Last 12 Months</h3>
 		  <ul id="user-months" class="stacked wbadges">
-			  <li id="month_6_2008" class="bin"><a href=""><span class="badge">3</span>June 2008</a></li>
-				<li id="month_5_2008" class="bin"><a href=""><span class="badge">12</span>May 2008</a></li>
-				<li id="month_4_2008" class="bin"><a href=""><span class="badge">15</span>April 2008</a></li>
-				<li id="month_3_2008" class="bin"><a href=""><span class="badge">14</span>March 2008</a></li>
-				<li id="month_2_2008" class="bin"><a href=""><span class="badge">8</span>February 2008</a></li>
-				<li id="month_1_2008" class="bin"><a href=""><span class="badge">6</span>January 2008</a></li>
-				<li id="month_12_2007" class="bin"><a href=""><span class="badge">2</span>December 2007</a></li>
-				<li id="month_11_2007" class="bin"><a href=""><span class="badge">12</span>November 2007</a></li>
-				<li id="month_10_2007" class="bin"><a href=""><span class="badge">14</span>October 2007</a></li>
-				<li id="month_9_2007" class="bin"><a href=""><span class="badge">12</span>September 2007</a></li>
-				<li id="month_8_2007" class="bin"><a href=""><span class="badge">16</span>August 2007</a></li>
-				<li id="month_7_2007" class="bin"><a href=""><span class="badge">17</span>July 2007</a></li>
+			  <li id="month_6_2008" class="bin">
+			    Month: <%= @month %>
+			    Year: <%= @year %>
+			    months: <%# @all_months %>
+			    today's month: <%# @todays_month_num %>
+			    last month's num: <%= 1.months.ago.month %>
+			    ordered month nums: <%# @ordered_month_nums %>
+			  </li>
+			  <% @today = Time.now %>
+			  <% for month in @rounds_per_month %>
+			    <li id="month_6_2008" class="bin">
+			       <%= link_to "<span class='badge'>#{month[:num_rounds]}</span> #{month[:month]} #{month[:year]} ", 
+								url_for(:m => month[:month_num], :y => month[:year]), :class => "" %>
+			    </li>
+			  <% end %>
 			</ul>
 		</div>
 	</div> <!-- /sidebar -->
