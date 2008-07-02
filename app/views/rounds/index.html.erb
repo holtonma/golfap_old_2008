@@ -3,6 +3,7 @@
 <% @playing_partner = [] %>
 <% @playing_partner[1] = "Tim Parker" %>
 <% @playing_partner[2] = "Tom Mino" %>
+<% @gravatar_email = 'holtonma@gmail.com' %>
 
 	<div id="main">
 		<div id="subtab-nav">
@@ -39,7 +40,9 @@
 		
 		<div id="page-top">
 		  <div class="greet clear">
-			  <a href="/"><img class="avatar" title="[<%= @name %>]" src="/images/avatar.gif" alt="[<%= @name %>]" border="0"></a>
+			  <a href="/">
+				  <%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
+				</a>
 			  <h3 class="nameplate"><%= @name %></h3>
 			  <p class="gmeta">
 			  	You have played <a href=""><%= @num_rounds %> rounds</a> in the last month.
@@ -51,14 +54,17 @@
 			<div id="golfrounds"> <%# events %>
 				<ul class="data golfrounds">
 					<li class="golfround clear">
-						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
+						<a href="">
+							<%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
+						</a>
 						<a title="" href="">88 (+16)</a> at Druid's Glen Golf Club.
 						<div style="border: 0px dotted silver;text-align:right;"><b>onesome:</b> <a href="">[enter playing partners]</a></div>
 						<p class="day-break"><span class="day">Saturday</span><span class="num">June 5th</span></p>
 						<span class="rtype rpractice">practice</span>
 					</li>
 					<li class="golfround clear">
-						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
+						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+						<%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
 							<span>
@@ -74,7 +80,7 @@
 						</span>
 					</li>
 					<li class="golfround clear">
-						<a href=""><img class="avatar" src="/images/avatar.gif" alt="<%= @name %>" border="0"></a>
+						<a href=""><%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %></a>
 						<a title="" href="">83 (+11)</a> at Legion Memorial Golf Club
 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
 							<span>

@@ -11702,3 +11702,2181 @@ Rendered shared/_header (0.00014)
 Rendered shared/_tabs (0.00034)
 Rendered shared/_footer (0.00016)
 Completed in 0.00530 (188 reqs/sec) | Rendering: 0.00260 (49%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-29 19:19:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00027)
+Rendered shared/_footer (0.00015)
+Completed in 0.00525 (190 reqs/sec) | Rendering: 0.00255 (48%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+  [4;35;1mSQL (0.104811)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:04:49) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (No route matches {:action=>"index", :gravatar_id=>"43d0ce9069d5cd6fa1a28b8b702bbeb8", :controller=>"avatar.php"}) on line #62 of rounds/index.html.erb:
+59: 					</li>
+60: 					<li class="golfround clear">
+61: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+62: 						<%= link_to(image_tag(gravatar_url_for 'holtonma@gmail.com'), 'some/url')%>
+63: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+64: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+65: 							<span>
+
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1408:in `generate'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:124:in `rewrite_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    app/helpers/application_helper.rb:12:in `gravatar_url_for'
+    app/views/rounds/index.html.erb:62:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:05:25) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+  [4;36;1mSQL (0.000178)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (No route matches {:action=>"index", :gravatar_id=>"43d0ce9069d5cd6fa1a28b8b702bbeb8", :controller=>"avatar.php"}) on line #62 of rounds/index.html.erb:
+59: 					</li>
+60: 					<li class="golfround clear">
+61: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+62: 						<%= link_to(image_tag(gravatar_url_for 'holtonma@gmail.com'), 'some/url')%>
+63: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+64: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+65: 							<span>
+
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1408:in `generate'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:124:in `rewrite_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    app/helpers/application_helper.rb:12:in `gravatar_url_for'
+    app/views/rounds/index.html.erb:62:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:07:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (No route matches {:action=>"index", :gravatar_id=>"43d0ce9069d5cd6fa1a28b8b702bbeb8", :controller=>"avatar.php"}) on line #62 of rounds/index.html.erb:
+59: 					</li>
+60: 					<li class="golfround clear">
+61: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+62: 						<%= image_tag(gravatar_url_for 'holtonma@gmail.com')%>
+63: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+64: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+65: 							<span>
+
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1408:in `generate'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:124:in `rewrite_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    app/helpers/application_helper.rb:12:in `gravatar_url_for'
+    app/views/rounds/index.html.erb:62:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:08:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (No route matches {:action=>"index", :gravatar_id=>"43d0ce9069d5cd6fa1a28b8b702bbeb8", :controller=>"avatar.php"}) on line #62 of rounds/index.html.erb:
+59: 					</li>
+60: 					<li class="golfround clear">
+61: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+62: 						<%= image_tag(gravatar_url_for 'holtonma@gmail.com')%>
+63: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+64: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+65: 							<span>
+
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1408:in `generate'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:124:in `rewrite_path'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:103:in `rewrite_url'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/url_rewriter.rb:81:in `rewrite'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:616:in `url_for'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/helpers/url_helper.rb:71:in `url_for'
+    app/helpers/application_helper.rb:12:in `gravatar_url_for'
+    app/views/rounds/index.html.erb:62:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:13:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.01200)
+Rendered shared/_tabs (0.01593)
+Rendered shared/_footer (0.00185)
+Completed in 0.07189 (13 reqs/sec) | Rendering: 0.06912 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:16:31) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+ERROR: compiling _run_erb_47app47views47rounds47index46html46erb RAISED compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => 'avatar' ).to_s); _erbout.concat "\n"
+                                                                                            ^
+Function body: def _run_erb_47app47views47rounds47index46html46erb(local_assigns)
+_erbout = '';  @name = "Mark Holton" ; _erbout.concat "\n"
+ @num_rounds = 3 ; _erbout.concat "\n"
+ @playing_partner = [] ; _erbout.concat "\n"
+ @playing_partner[1] = "Tim Parker" ; _erbout.concat "\n"
+ @playing_partner[2] = "Tom Mino" ; _erbout.concat "\n"
+ @gravatar_email = 'holtonma@gmail.com' ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "\t<div id=\"main\">\n"
+_erbout.concat "\t\t<div id=\"subtab-nav\">\n"
+_erbout.concat "\t\t\t<ul><!-- class=\"subnav secondlevel\"-->\n"
+_erbout.concat "\t\t\t\t<li id=\"t-roundmain\" class=\"selected\"><a href=\"\">Rounds Main</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Find Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Goals</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div id=\"detail-nav\">\n"
+_erbout.concat "\t\t\t<ul class=\"clear\">\n"
+_erbout.concat "\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Last 10 Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li>"; _erbout.concat(( link_to "New Round", new_player_round_path(@user_id) ).to_s); _erbout.concat "</li> \n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Starred Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-findrounds\">\n"
+_erbout.concat "\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\tFind Round:&nbsp;&nbsp;\n"
+_erbout.concat "\t\t\t\t\t\t<em>more</em>\n"
+_erbout.concat "\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t<ul class=\"submenu wbadges\" style=\"display:none;\">\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>\n"
+_erbout.concat "\t\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-bestrounds\"><a href=\"\">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"flashes\">\n"
+_erbout.concat "\t\t\t<!-- -->\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"page-top\">\n"
+_erbout.concat "\t\t  <div class=\"greet clear\">\n"
+_erbout.concat "\t\t\t  <a href=\"/\">\n"
+_erbout.concat "\t\t\t\t  <img class=\"avatar\" title=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" src=\"/images/avatar.gif\" alt=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t  <h3 class=\"nameplate\">"; _erbout.concat(( @name ).to_s); _erbout.concat "</h3>\n"
+_erbout.concat "\t\t\t  <p class=\"gmeta\">\n"
+_erbout.concat "\t\t\t  \tYou have played <a href=\"\">"; _erbout.concat(( @num_rounds ).to_s); _erbout.concat " rounds</a> in the last month.\n"
+_erbout.concat "\t\t\t  </p>\n"
+_erbout.concat "\t\t\t</div>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div align=\"center\"><h2>Your recent golf rounds:</h2></div>\n"
+_erbout.concat "\t\t<div id=\"main-content\" class=\"clear\">\n"
+_erbout.concat "\t\t\t<div id=\"golfrounds\"> "; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<ul class=\"data golfrounds\">\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">88 (+16)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;\"><b>onesome:</b> <a href=\"\">[enter playing partners]</a></div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\"><span class=\"day\">Saturday</span><span class=\"num\">June 5th</span></p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rpractice\">practice</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => 'avatar' ).to_s); _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">87 (+15)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 6th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\"><img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\"></a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">83 (+11)</a> at Legion Memorial Golf Club\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 13th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t</div> <!-- golf rounds -->\n"
+_erbout.concat "\t\t</div> <!-- main content-->\n"
+_erbout.concat "  </div> <!-- main -->\n"
+_erbout.concat "  <div id=\"sidebar\">\n"
+_erbout.concat "\t  <div class=\"side_description\">Use these sidebar hotlinks to locate groups of rounds</div>\n"
+_erbout.concat "\t  <div class=\"sideblock\">\n"
+_erbout.concat "\t  \t<h3>Tags</h3>\n"
+_erbout.concat "\t    <ul id=\"tag-list\">\n"
+_erbout.concat "\t\t    <li><a title=\"druids\" rel=\"tag\" href=\"\">druids</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a title=\"windy\" rel=\"tag\" href=\"\">windy</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"winterrules\" rel=\"tag\" href=\"\">winterrules</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"fall\" rel=\"tag\" href=\"\">fall</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"carry_bag\" rel=\"tag\" href=\"\">carry_bag</a></li>\n"
+_erbout.concat "\t\t  </ul>\n"
+_erbout.concat "\t  </div>\n"
+_erbout.concat "\t  <div id=\"months-block\" class=\"sideblock\">\n"
+_erbout.concat "\t\t  <h3>Last 12 Months</h3>\n"
+_erbout.concat "\t\t  <ul id=\"user-months\" class=\"stacked wbadges\">\n"
+_erbout.concat "\t\t\t  <li id=\"month_6_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">3</span>June 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_5_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>May 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_4_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">15</span>April 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_3_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>March 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_2_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">8</span>February 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_1_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">6</span>January 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_12_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">2</span>December 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_11_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>November 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_10_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>October 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_9_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>September 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_8_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">16</span>August 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_7_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">17</span>July 2007</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t</div> <!-- /sidebar -->\n"
+_erbout.concat "\t\n"
+_erbout.concat "\n"
+_erbout.concat "<div style=\"clear:left;\"></div>\n"
+_erbout.concat "<p align=\"center\">Find me in app/views/rounds/index.html.erb</p>\n"
+_erbout
+end
+Backtrace: /Users/holtonma/git/golfap/app/views/rounds/index.html.erb:137:in `compile_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => 'avatar' ).to_s); _erbout.concat "\n"
+                                                                                            ^) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email), :class => 'avatar' %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:137:in `compile_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:16:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+ERROR: compiling _run_erb_47app47views47rounds47index46html46erb RAISED compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+                                                                                            ^
+Function body: def _run_erb_47app47views47rounds47index46html46erb(local_assigns)
+_erbout = '';  @name = "Mark Holton" ; _erbout.concat "\n"
+ @num_rounds = 3 ; _erbout.concat "\n"
+ @playing_partner = [] ; _erbout.concat "\n"
+ @playing_partner[1] = "Tim Parker" ; _erbout.concat "\n"
+ @playing_partner[2] = "Tom Mino" ; _erbout.concat "\n"
+ @gravatar_email = 'holtonma@gmail.com' ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "\t<div id=\"main\">\n"
+_erbout.concat "\t\t<div id=\"subtab-nav\">\n"
+_erbout.concat "\t\t\t<ul><!-- class=\"subnav secondlevel\"-->\n"
+_erbout.concat "\t\t\t\t<li id=\"t-roundmain\" class=\"selected\"><a href=\"\">Rounds Main</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Find Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Goals</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div id=\"detail-nav\">\n"
+_erbout.concat "\t\t\t<ul class=\"clear\">\n"
+_erbout.concat "\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Last 10 Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li>"; _erbout.concat(( link_to "New Round", new_player_round_path(@user_id) ).to_s); _erbout.concat "</li> \n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Starred Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-findrounds\">\n"
+_erbout.concat "\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\tFind Round:&nbsp;&nbsp;\n"
+_erbout.concat "\t\t\t\t\t\t<em>more</em>\n"
+_erbout.concat "\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t<ul class=\"submenu wbadges\" style=\"display:none;\">\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>\n"
+_erbout.concat "\t\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-bestrounds\"><a href=\"\">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"flashes\">\n"
+_erbout.concat "\t\t\t<!-- -->\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"page-top\">\n"
+_erbout.concat "\t\t  <div class=\"greet clear\">\n"
+_erbout.concat "\t\t\t  <a href=\"/\">\n"
+_erbout.concat "\t\t\t\t  <img class=\"avatar\" title=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" src=\"/images/avatar.gif\" alt=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t  <h3 class=\"nameplate\">"; _erbout.concat(( @name ).to_s); _erbout.concat "</h3>\n"
+_erbout.concat "\t\t\t  <p class=\"gmeta\">\n"
+_erbout.concat "\t\t\t  \tYou have played <a href=\"\">"; _erbout.concat(( @num_rounds ).to_s); _erbout.concat " rounds</a> in the last month.\n"
+_erbout.concat "\t\t\t  </p>\n"
+_erbout.concat "\t\t\t</div>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div align=\"center\"><h2>Your recent golf rounds:</h2></div>\n"
+_erbout.concat "\t\t<div id=\"main-content\" class=\"clear\">\n"
+_erbout.concat "\t\t\t<div id=\"golfrounds\"> "; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<ul class=\"data golfrounds\">\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">88 (+16)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;\"><b>onesome:</b> <a href=\"\">[enter playing partners]</a></div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\"><span class=\"day\">Saturday</span><span class=\"num\">June 5th</span></p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rpractice\">practice</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">87 (+15)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 6th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\"><img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\"></a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">83 (+11)</a> at Legion Memorial Golf Club\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 13th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t</div> <!-- golf rounds -->\n"
+_erbout.concat "\t\t</div> <!-- main content-->\n"
+_erbout.concat "  </div> <!-- main -->\n"
+_erbout.concat "  <div id=\"sidebar\">\n"
+_erbout.concat "\t  <div class=\"side_description\">Use these sidebar hotlinks to locate groups of rounds</div>\n"
+_erbout.concat "\t  <div class=\"sideblock\">\n"
+_erbout.concat "\t  \t<h3>Tags</h3>\n"
+_erbout.concat "\t    <ul id=\"tag-list\">\n"
+_erbout.concat "\t\t    <li><a title=\"druids\" rel=\"tag\" href=\"\">druids</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a title=\"windy\" rel=\"tag\" href=\"\">windy</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"winterrules\" rel=\"tag\" href=\"\">winterrules</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"fall\" rel=\"tag\" href=\"\">fall</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"carry_bag\" rel=\"tag\" href=\"\">carry_bag</a></li>\n"
+_erbout.concat "\t\t  </ul>\n"
+_erbout.concat "\t  </div>\n"
+_erbout.concat "\t  <div id=\"months-block\" class=\"sideblock\">\n"
+_erbout.concat "\t\t  <h3>Last 12 Months</h3>\n"
+_erbout.concat "\t\t  <ul id=\"user-months\" class=\"stacked wbadges\">\n"
+_erbout.concat "\t\t\t  <li id=\"month_6_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">3</span>June 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_5_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>May 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_4_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">15</span>April 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_3_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>March 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_2_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">8</span>February 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_1_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">6</span>January 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_12_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">2</span>December 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_11_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>November 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_10_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>October 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_9_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>September 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_8_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">16</span>August 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_7_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">17</span>July 2007</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t</div> <!-- /sidebar -->\n"
+_erbout.concat "\t\n"
+_erbout.concat "\n"
+_erbout.concat "<div style=\"clear:left;\"></div>\n"
+_erbout.concat "<p align=\"center\">Find me in app/views/rounds/index.html.erb</p>\n"
+_erbout
+end
+Backtrace: /Users/holtonma/git/golfap/app/views/rounds/index.html.erb:137:in `compile_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+                                                                                            ^) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email), :class => "avatar" %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:137:in `compile_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:16:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+ERROR: compiling _run_erb_47app47views47rounds47index46html46erb RAISED compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+                                                                                            ^
+Function body: def _run_erb_47app47views47rounds47index46html46erb(local_assigns)
+_erbout = '';  @name = "Mark Holton" ; _erbout.concat "\n"
+ @num_rounds = 3 ; _erbout.concat "\n"
+ @playing_partner = [] ; _erbout.concat "\n"
+ @playing_partner[1] = "Tim Parker" ; _erbout.concat "\n"
+ @playing_partner[2] = "Tom Mino" ; _erbout.concat "\n"
+ @gravatar_email = 'holtonma@gmail.com' ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "\t<div id=\"main\">\n"
+_erbout.concat "\t\t<div id=\"subtab-nav\">\n"
+_erbout.concat "\t\t\t<ul><!-- class=\"subnav secondlevel\"-->\n"
+_erbout.concat "\t\t\t\t<li id=\"t-roundmain\" class=\"selected\"><a href=\"\">Rounds Main</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Find Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Goals</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div id=\"detail-nav\">\n"
+_erbout.concat "\t\t\t<ul class=\"clear\">\n"
+_erbout.concat "\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Last 10 Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li>"; _erbout.concat(( link_to "New Round", new_player_round_path(@user_id) ).to_s); _erbout.concat "</li> \n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Starred Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-findrounds\">\n"
+_erbout.concat "\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\tFind Round:&nbsp;&nbsp;\n"
+_erbout.concat "\t\t\t\t\t\t<em>more</em>\n"
+_erbout.concat "\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t<ul class=\"submenu wbadges\" style=\"display:none;\">\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>\n"
+_erbout.concat "\t\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-bestrounds\"><a href=\"\">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"flashes\">\n"
+_erbout.concat "\t\t\t<!-- -->\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"page-top\">\n"
+_erbout.concat "\t\t  <div class=\"greet clear\">\n"
+_erbout.concat "\t\t\t  <a href=\"/\">\n"
+_erbout.concat "\t\t\t\t  <img class=\"avatar\" title=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" src=\"/images/avatar.gif\" alt=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t  <h3 class=\"nameplate\">"; _erbout.concat(( @name ).to_s); _erbout.concat "</h3>\n"
+_erbout.concat "\t\t\t  <p class=\"gmeta\">\n"
+_erbout.concat "\t\t\t  \tYou have played <a href=\"\">"; _erbout.concat(( @num_rounds ).to_s); _erbout.concat " rounds</a> in the last month.\n"
+_erbout.concat "\t\t\t  </p>\n"
+_erbout.concat "\t\t\t</div>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div align=\"center\"><h2>Your recent golf rounds:</h2></div>\n"
+_erbout.concat "\t\t<div id=\"main-content\" class=\"clear\">\n"
+_erbout.concat "\t\t\t<div id=\"golfrounds\"> "; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<ul class=\"data golfrounds\">\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">88 (+16)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;\"><b>onesome:</b> <a href=\"\">[enter playing partners]</a></div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\"><span class=\"day\">Saturday</span><span class=\"num\">June 5th</span></p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rpractice\">practice</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">87 (+15)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 6th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\"><img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\"></a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">83 (+11)</a> at Legion Memorial Golf Club\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 13th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t</div> <!-- golf rounds -->\n"
+_erbout.concat "\t\t</div> <!-- main content-->\n"
+_erbout.concat "  </div> <!-- main -->\n"
+_erbout.concat "  <div id=\"sidebar\">\n"
+_erbout.concat "\t  <div class=\"side_description\">Use these sidebar hotlinks to locate groups of rounds</div>\n"
+_erbout.concat "\t  <div class=\"sideblock\">\n"
+_erbout.concat "\t  \t<h3>Tags</h3>\n"
+_erbout.concat "\t    <ul id=\"tag-list\">\n"
+_erbout.concat "\t\t    <li><a title=\"druids\" rel=\"tag\" href=\"\">druids</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a title=\"windy\" rel=\"tag\" href=\"\">windy</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"winterrules\" rel=\"tag\" href=\"\">winterrules</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"fall\" rel=\"tag\" href=\"\">fall</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"carry_bag\" rel=\"tag\" href=\"\">carry_bag</a></li>\n"
+_erbout.concat "\t\t  </ul>\n"
+_erbout.concat "\t  </div>\n"
+_erbout.concat "\t  <div id=\"months-block\" class=\"sideblock\">\n"
+_erbout.concat "\t\t  <h3>Last 12 Months</h3>\n"
+_erbout.concat "\t\t  <ul id=\"user-months\" class=\"stacked wbadges\">\n"
+_erbout.concat "\t\t\t  <li id=\"month_6_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">3</span>June 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_5_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>May 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_4_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">15</span>April 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_3_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>March 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_2_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">8</span>February 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_1_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">6</span>January 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_12_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">2</span>December 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_11_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>November 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_10_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>October 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_9_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>September 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_8_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">16</span>August 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_7_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">17</span>July 2007</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t</div> <!-- /sidebar -->\n"
+_erbout.concat "\t\n"
+_erbout.concat "\n"
+_erbout.concat "<div style=\"clear:left;\"></div>\n"
+_erbout.concat "<p align=\"center\">Find me in app/views/rounds/index.html.erb</p>\n"
+_erbout
+end
+Backtrace: /Users/holtonma/git/golfap/app/views/rounds/index.html.erb:137:in `compile_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email), :class => "avatar" ).to_s); _erbout.concat "\n"
+                                                                                            ^) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email), :class => "avatar" %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:137:in `compile_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:18:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+ERROR: compiling _run_erb_47app47views47rounds47index46html46erb RAISED compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ','
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                             ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                                                 ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ')', expecting kEND
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                                                                       ^
+Function body: def _run_erb_47app47views47rounds47index46html46erb(local_assigns)
+_erbout = '';  @name = "Mark Holton" ; _erbout.concat "\n"
+ @num_rounds = 3 ; _erbout.concat "\n"
+ @playing_partner = [] ; _erbout.concat "\n"
+ @playing_partner[1] = "Tim Parker" ; _erbout.concat "\n"
+ @playing_partner[2] = "Tom Mino" ; _erbout.concat "\n"
+ @gravatar_email = 'holtonma@gmail.com' ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "\t<div id=\"main\">\n"
+_erbout.concat "\t\t<div id=\"subtab-nav\">\n"
+_erbout.concat "\t\t\t<ul><!-- class=\"subnav secondlevel\"-->\n"
+_erbout.concat "\t\t\t\t<li id=\"t-roundmain\" class=\"selected\"><a href=\"\">Rounds Main</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Find Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Goals</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div id=\"detail-nav\">\n"
+_erbout.concat "\t\t\t<ul class=\"clear\">\n"
+_erbout.concat "\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Last 10 Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li>"; _erbout.concat(( link_to "New Round", new_player_round_path(@user_id) ).to_s); _erbout.concat "</li> \n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Starred Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-findrounds\">\n"
+_erbout.concat "\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\tFind Round:&nbsp;&nbsp;\n"
+_erbout.concat "\t\t\t\t\t\t<em>more</em>\n"
+_erbout.concat "\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t<ul class=\"submenu wbadges\" style=\"display:none;\">\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>\n"
+_erbout.concat "\t\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-bestrounds\"><a href=\"\">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"flashes\">\n"
+_erbout.concat "\t\t\t<!-- -->\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"page-top\">\n"
+_erbout.concat "\t\t  <div class=\"greet clear\">\n"
+_erbout.concat "\t\t\t  <a href=\"/\">\n"
+_erbout.concat "\t\t\t\t  <img class=\"avatar\" title=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" src=\"/images/avatar.gif\" alt=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t  <h3 class=\"nameplate\">"; _erbout.concat(( @name ).to_s); _erbout.concat "</h3>\n"
+_erbout.concat "\t\t\t  <p class=\"gmeta\">\n"
+_erbout.concat "\t\t\t  \tYou have played <a href=\"\">"; _erbout.concat(( @num_rounds ).to_s); _erbout.concat " rounds</a> in the last month.\n"
+_erbout.concat "\t\t\t  </p>\n"
+_erbout.concat "\t\t\t</div>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div align=\"center\"><h2>Your recent golf rounds:</h2></div>\n"
+_erbout.concat "\t\t<div id=\"main-content\" class=\"clear\">\n"
+_erbout.concat "\t\t\t<div id=\"golfrounds\"> "; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<ul class=\"data golfrounds\">\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">88 (+16)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;\"><b>onesome:</b> <a href=\"\">[enter playing partners]</a></div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\"><span class=\"day\">Saturday</span><span class=\"num\">June 5th</span></p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rpractice\">practice</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">87 (+15)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 6th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\"><img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\"></a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">83 (+11)</a> at Legion Memorial Golf Club\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 13th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t</div> <!-- golf rounds -->\n"
+_erbout.concat "\t\t</div> <!-- main content-->\n"
+_erbout.concat "  </div> <!-- main -->\n"
+_erbout.concat "  <div id=\"sidebar\">\n"
+_erbout.concat "\t  <div class=\"side_description\">Use these sidebar hotlinks to locate groups of rounds</div>\n"
+_erbout.concat "\t  <div class=\"sideblock\">\n"
+_erbout.concat "\t  \t<h3>Tags</h3>\n"
+_erbout.concat "\t    <ul id=\"tag-list\">\n"
+_erbout.concat "\t\t    <li><a title=\"druids\" rel=\"tag\" href=\"\">druids</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a title=\"windy\" rel=\"tag\" href=\"\">windy</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"winterrules\" rel=\"tag\" href=\"\">winterrules</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"fall\" rel=\"tag\" href=\"\">fall</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"carry_bag\" rel=\"tag\" href=\"\">carry_bag</a></li>\n"
+_erbout.concat "\t\t  </ul>\n"
+_erbout.concat "\t  </div>\n"
+_erbout.concat "\t  <div id=\"months-block\" class=\"sideblock\">\n"
+_erbout.concat "\t\t  <h3>Last 12 Months</h3>\n"
+_erbout.concat "\t\t  <ul id=\"user-months\" class=\"stacked wbadges\">\n"
+_erbout.concat "\t\t\t  <li id=\"month_6_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">3</span>June 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_5_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>May 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_4_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">15</span>April 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_3_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>March 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_2_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">8</span>February 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_1_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">6</span>January 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_12_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">2</span>December 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_11_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>November 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_10_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>October 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_9_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>September 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_8_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">16</span>August 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_7_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">17</span>July 2007</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t</div> <!-- /sidebar -->\n"
+_erbout.concat "\t\n"
+_erbout.concat "\n"
+_erbout.concat "<div style=\"clear:left;\"></div>\n"
+_erbout.concat "<p align=\"center\">Find me in app/views/rounds/index.html.erb</p>\n"
+_erbout
+end
+Backtrace: /Users/holtonma/git/golfap/app/views/rounds/index.html.erb:137:in `compile_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ','
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                             ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ',', expecting ')'
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                                                 ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ')', expecting kEND
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) ).to_s); _erbout.concat "\n"
+                                                                                                                                       ^) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email, , :class => "avatar", :border => 0) %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:137:in `compile_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:18:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+ERROR: compiling _run_erb_47app47views47rounds47index46html46erb RAISED compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ','
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") ).to_s); _erbout.concat "\n"
+                                                                                             ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ')', expecting kEND
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") ).to_s); _erbout.concat "\n"
+                                                                                                                         ^
+Function body: def _run_erb_47app47views47rounds47index46html46erb(local_assigns)
+_erbout = '';  @name = "Mark Holton" ; _erbout.concat "\n"
+ @num_rounds = 3 ; _erbout.concat "\n"
+ @playing_partner = [] ; _erbout.concat "\n"
+ @playing_partner[1] = "Tim Parker" ; _erbout.concat "\n"
+ @playing_partner[2] = "Tom Mino" ; _erbout.concat "\n"
+ @gravatar_email = 'holtonma@gmail.com' ; _erbout.concat "\n"
+_erbout.concat "\n"
+_erbout.concat "\t<div id=\"main\">\n"
+_erbout.concat "\t\t<div id=\"subtab-nav\">\n"
+_erbout.concat "\t\t\t<ul><!-- class=\"subnav secondlevel\"-->\n"
+_erbout.concat "\t\t\t\t<li id=\"t-roundmain\" class=\"selected\"><a href=\"\">Rounds Main</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Find Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Goals</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div id=\"detail-nav\">\n"
+_erbout.concat "\t\t\t<ul class=\"clear\">\n"
+_erbout.concat "\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Last 10 Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li>"; _erbout.concat(( link_to "New Round", new_player_round_path(@user_id) ).to_s); _erbout.concat "</li> \n"
+_erbout.concat "\t\t\t\t<li><a href=\"\">Starred Rounds</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-findrounds\">\n"
+_erbout.concat "\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\tFind Round:&nbsp;&nbsp;\n"
+_erbout.concat "\t\t\t\t\t\t<em>more</em>\n"
+_erbout.concat "\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t<ul class=\"submenu wbadges\" style=\"display:none;\">\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/13/08 : 88 (+16) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/6/08 : 87 (+15) at Druid's Glen GC</li>\n"
+_erbout.concat "\t\t\t\t\t\t<li>6/5/08 : 83 (+11) at Legion Memorial GC</li>\n"
+_erbout.concat "\t\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t<li id=\"t-bestrounds\"><a href=\"\">Best Rounds:&nbsp;&nbsp;<em>more</em></a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"flashes\">\n"
+_erbout.concat "\t\t\t<!-- -->\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t\n"
+_erbout.concat "\t\t<div id=\"page-top\">\n"
+_erbout.concat "\t\t  <div class=\"greet clear\">\n"
+_erbout.concat "\t\t\t  <a href=\"/\">\n"
+_erbout.concat "\t\t\t\t  <img class=\"avatar\" title=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" src=\"/images/avatar.gif\" alt=\"["; _erbout.concat(( @name ).to_s); _erbout.concat "]\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t  <h3 class=\"nameplate\">"; _erbout.concat(( @name ).to_s); _erbout.concat "</h3>\n"
+_erbout.concat "\t\t\t  <p class=\"gmeta\">\n"
+_erbout.concat "\t\t\t  \tYou have played <a href=\"\">"; _erbout.concat(( @num_rounds ).to_s); _erbout.concat " rounds</a> in the last month.\n"
+_erbout.concat "\t\t\t  </p>\n"
+_erbout.concat "\t\t\t</div>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t\t<div align=\"center\"><h2>Your recent golf rounds:</h2></div>\n"
+_erbout.concat "\t\t<div id=\"main-content\" class=\"clear\">\n"
+_erbout.concat "\t\t\t<div id=\"golfrounds\"> "; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t<ul class=\"data golfrounds\">\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\">\n"
+_erbout.concat "\t\t\t\t\t\t</a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">88 (+16)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;\"><b>onesome:</b> <a href=\"\">[enter playing partners]</a></div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\"><span class=\"day\">Saturday</span><span class=\"num\">June 5th</span></p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rpractice\">practice</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") ).to_s); _erbout.concat "\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">87 (+15)</a> at Druid's Glen Golf Club.\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 6th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t\t<li class=\"golfround clear\">\n"
+_erbout.concat "\t\t\t\t\t\t<a href=\"\"><img class=\"avatar\" src=\"/images/avatar.gif\" alt=\""; _erbout.concat(( @name ).to_s); _erbout.concat "\" border=\"0\"></a>\n"
+_erbout.concat "\t\t\t\t\t\t<a title=\"\" href=\"\">83 (+11)</a> at Legion Memorial Golf Club\n"
+_erbout.concat "\t\t\t\t\t\t<div style=\"border: 0px dotted silver;text-align:right;display:block;\" align=\"right\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span>\n"
+_erbout.concat "\t\t\t\t\t\t\t\t<b>threesome:</b> <a href=\"\">Tim Parker</a>, Tom Mino ( <a href=\"\">invite</a> )\n"
+_erbout.concat "\t\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t\t</div>\n"
+_erbout.concat "\t\t\t\t\t\t<p class=\"day-break\">\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"day\">Sunday</span>\n"
+_erbout.concat "\t\t\t\t\t\t\t<span class=\"num\">June 13th</span>\n"
+_erbout.concat "\t\t\t\t\t\t</p>\n"
+_erbout.concat "\t\t\t\t\t\t<span class=\"rtype rtournament\">\n"
+_erbout.concat "\t\t\t\t\t\t\ttournament\n"
+_erbout.concat "\t\t\t\t\t\t</span>\n"
+_erbout.concat "\t\t\t\t\t</li>\n"
+_erbout.concat "\t\t\t\t</ul>\n"
+_erbout.concat "\t\t\t</div> <!-- golf rounds -->\n"
+_erbout.concat "\t\t</div> <!-- main content-->\n"
+_erbout.concat "  </div> <!-- main -->\n"
+_erbout.concat "  <div id=\"sidebar\">\n"
+_erbout.concat "\t  <div class=\"side_description\">Use these sidebar hotlinks to locate groups of rounds</div>\n"
+_erbout.concat "\t  <div class=\"sideblock\">\n"
+_erbout.concat "\t  \t<h3>Tags</h3>\n"
+_erbout.concat "\t    <ul id=\"tag-list\">\n"
+_erbout.concat "\t\t    <li><a title=\"druids\" rel=\"tag\" href=\"\">druids</a></li>\n"
+_erbout.concat "\t\t\t\t<li><a title=\"windy\" rel=\"tag\" href=\"\">windy</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"winterrules\" rel=\"tag\" href=\"\">winterrules</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"fall\" rel=\"tag\" href=\"\">fall</a></li>\n"
+_erbout.concat "\t\t\t  <li><a title=\"carry_bag\" rel=\"tag\" href=\"\">carry_bag</a></li>\n"
+_erbout.concat "\t\t  </ul>\n"
+_erbout.concat "\t  </div>\n"
+_erbout.concat "\t  <div id=\"months-block\" class=\"sideblock\">\n"
+_erbout.concat "\t\t  <h3>Last 12 Months</h3>\n"
+_erbout.concat "\t\t  <ul id=\"user-months\" class=\"stacked wbadges\">\n"
+_erbout.concat "\t\t\t  <li id=\"month_6_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">3</span>June 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_5_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>May 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_4_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">15</span>April 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_3_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>March 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_2_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">8</span>February 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_1_2008\" class=\"bin\"><a href=\"\"><span class=\"badge\">6</span>January 2008</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_12_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">2</span>December 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_11_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>November 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_10_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">14</span>October 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_9_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">12</span>September 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_8_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">16</span>August 2007</a></li>\n"
+_erbout.concat "\t\t\t\t<li id=\"month_7_2007\" class=\"bin\"><a href=\"\"><span class=\"badge\">17</span>July 2007</a></li>\n"
+_erbout.concat "\t\t\t</ul>\n"
+_erbout.concat "\t\t</div>\n"
+_erbout.concat "\t</div> <!-- /sidebar -->\n"
+_erbout.concat "\t\n"
+_erbout.concat "\n"
+_erbout.concat "<div style=\"clear:left;\"></div>\n"
+_erbout.concat "<p align=\"center\">Find me in app/views/rounds/index.html.erb</p>\n"
+_erbout
+end
+Backtrace: /Users/holtonma/git/golfap/app/views/rounds/index.html.erb:137:in `compile_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+/opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+/opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+/opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+/opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+/opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+script/server:3
+
+
+ActionView::TemplateError (compile error
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ','
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") ).to_s); _erbout.concat "\n"
+                                                                                             ^
+/Users/holtonma/git/golfap/app/views/rounds/index.html.erb:67: syntax error, unexpected ')', expecting kEND
+_erbout.concat "\t\t\t\t\t\t"; _erbout.concat(( image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") ).to_s); _erbout.concat "\n"
+                                                                                                                         ^) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email, , :class => "avatar") %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:137:in `compile_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:19:37) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+
+
+ActionView::TemplateError (wrong number of arguments (2 for 1)) on line #67 of rounds/index.html.erb:
+64: 					</li>
+65: 					<li class="golfround clear">
+66: 						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
+67: 						<%= image_tag(url_for_gravatar @gravatar_email, :class => "avatar") %>
+68: 						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
+69: 						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
+70: 							<span>
+
+    app/views/rounds/index.html.erb:67:in `url_for_gravatar'
+    app/views/rounds/index.html.erb:67:in `_run_erb_47app47views47rounds47index46html46erb'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:637:in `compile_and_render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:836:in `render_with_no_layout'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/layout.rb:262:in `render_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1153:in `default_render'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1159:in `perform_action_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /opt/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:489:in `load'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/servers/mongrel.rb:64
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /opt/local/lib/ruby/gems/1.8/gems/activesupport-2.0.2/lib/active_support/dependencies.rb:496:in `require'
+    /opt/local/lib/ruby/gems/1.8/gems/rails-2.0.2/lib/commands/server.rb:39
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /opt/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /opt/local/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:19:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00016)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00017)
+Completed in 0.01067 (93 reqs/sec) | Rendering: 0.00783 (73%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:20:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.01087 (92 reqs/sec) | Rendering: 0.00810 (74%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:21:51) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00016)
+Completed in 0.01035 (96 reqs/sec) | Rendering: 0.00762 (73%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:22:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00028)
+Rendered shared/_footer (0.00022)
+Completed in 0.01023 (97 reqs/sec) | Rendering: 0.00756 (73%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:23:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00021)
+Rendered shared/_tabs (0.00033)
+Rendered shared/_footer (0.00016)
+Completed in 0.07692 (13 reqs/sec) | Rendering: 0.07417 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-06-30 18:23:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00029)
+Rendered shared/_footer (0.00015)
+Completed in 0.01184 (84 reqs/sec) | Rendering: 0.00792 (66%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
+  [4;36;1mSQL (0.000180)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.013149)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.001001)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000181)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000105)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000116)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000238)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000096)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000100)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFriends (17)
+  [4;36;1mSQL (0.068536)[0m   [0;1mCREATE TABLE `friends` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.019897)[0m   [0mUPDATE schema_info SET version = 17[0m
+  [4;36;1mSQL (0.000271)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateTournaments (18)
+  [4;35;1mSQL (0.028446)[0m   [0mCREATE TABLE `tournaments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mUPDATE schema_info SET version = 18[0m
+  [4;35;1mSQL (0.000183)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateSettings (19)
+  [4;36;1mSQL (0.040187)[0m   [0;1mCREATE TABLE `settings` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000691)[0m   [0mUPDATE schema_info SET version = 19[0m
+  [4;36;1mSQL (0.000218)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to CreateLeaderboards (20)
+  [4;35;1mSQL (0.057623)[0m   [0mCREATE TABLE `leaderboards` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000472)[0m   [0;1mUPDATE schema_info SET version = 20[0m
+  [4;35;1mSQL (0.000230)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoursome (21)
+  [4;36;1mSQL (0.002828)[0m   [0;1mCREATE TABLE `foursomes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `round_id` int(11) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `friend_user_id` int(11) DEFAULT NULL, `friend_lname` varchar(255) DEFAULT NULL, `friend_fname` varchar(255) DEFAULT NULL, `friend_email` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'friends' already exists: CREATE TABLE `friends` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `friend_initiator_id` int(11) DEFAULT NULL, `friend_acceptor_id` int(11) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000269)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000129)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000132)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000143)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000119)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000110)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000122)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoursome (21)
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'foursomes' already exists: CREATE TABLE `foursomes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `round_id` int(11) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `friend_user_id` int(11) DEFAULT NULL, `friend_lname` varchar(255) DEFAULT NULL, `friend_fname` varchar(255) DEFAULT NULL, `friend_email` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000269)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000138)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000132)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000121)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000116)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000125)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000117)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000117)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoursome (21)
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'foursomes' already exists: CREATE TABLE `foursomes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `round_id` int(11) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `friend_user_id` int(11) DEFAULT NULL, `friend_lname` varchar(255) DEFAULT NULL, `friend_fname` varchar(255) DEFAULT NULL, `friend_email` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000000)[0m   [0mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Table 'schema_info' already exists: CREATE TABLE `schema_info` (version int(11))[0m
+  [4;35;1mSQL (0.000264)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000109)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000102)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000106)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000100)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000097)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000098)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.004723)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000107)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000100)[0m   [0mSELECT version FROM schema_info[0m
+  [4;36;1mSQL (0.000099)[0m   [0;1mSELECT version FROM schema_info[0m
+  [4;35;1mSQL (0.000099)[0m   [0mSELECT version FROM schema_info[0m
+Migrating to CreateFoursome (21)
+  [4;36;1mSQL (0.000216)[0m   [0;1mSET FOREIGN_KEY_CHECKS=0[0m
+  [4;35;1mSQL (0.066447)[0m   [0mDROP TABLE `foursomes`[0m
+  [4;36;1mSQL (0.032179)[0m   [0;1mCREATE TABLE `foursomes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `round_id` int(11) DEFAULT NULL, `user_id` int(11) DEFAULT NULL, `friend_user_id` int(11) DEFAULT NULL, `friend_lname` varchar(255) DEFAULT NULL, `friend_fname` varchar(255) DEFAULT NULL, `friend_email` varchar(255) DEFAULT NULL, `created_at` datetime DEFAULT NULL, `updated_at` datetime DEFAULT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.003298)[0m   [0mUPDATE schema_info SET version = 21[0m
+  [4;36;1mSQL (0.000288)[0m   [0;1mSELECT version FROM schema_info[0m
+Migrating to ModifyFriends (22)
+  [4;35;1mSQL (0.024400)[0m   [0mALTER TABLE `friends` ADD `friend_initiator_id` int(11)[0m
+  [4;36;1mSQL (0.006167)[0m   [0;1mALTER TABLE `friends` ADD `friend_acceptor_id` int(11)[0m
+
+
+Processing StatsController#index (for 127.0.0.1 at 2008-07-01 18:37:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"stats"}
+  [4;36;1mSQL (0.000161)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering stats/index
+Rendered shared/_header (0.00080)
+Rendered shared/_tabs (0.06269)
+Rendered shared/_footer (0.00073)
+Completed in 0.08293 (12 reqs/sec) | Rendering: 0.08002 (96%) | DB: 0.00016 (0%) | 200 OK [http://localhost/players/2/stats]
+
+
+Processing RoundsController#index (for 127.0.0.1 at 2008-07-01 18:37:20) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--f1f19360e1e5b3ed0fe4c38e87c00677925ac12b
+  Parameters: {"player_id"=>"2", "action"=>"index", "controller"=>"rounds"}
+Rendering template within layouts/application
+Rendering rounds/index
+Rendered shared/_header (0.00015)
+Rendered shared/_tabs (0.00030)
+Rendered shared/_footer (0.00015)
+Completed in 0.01093 (91 reqs/sec) | Rendering: 0.00776 (71%) | DB: 0.00000 (0%) | 200 OK [http://localhost/players/2/rounds]
