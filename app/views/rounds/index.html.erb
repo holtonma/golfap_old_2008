@@ -116,29 +116,15 @@
 		  </ul>
 	  </div>
 	  <div id="months-block" class="sideblock">
-		  <h3>Last 12 Months</h3>
+		  <h3>GolfAp Rounds Last 12 Months</h3>
 		  <ul id="user-months" class="stacked wbadges">
-			  <li id="month_6_2008" class="bin">
-			    Month: <%= @month %>
-			    Year: <%= @year %>
-			    months: <%# @all_months %>
-			    today's month: <%# @todays_month_num %>
-			    last month's num: <%= 1.months.ago.month %>
-			    ordered month nums: <%# @ordered_month_nums %>
-			  </li>
-			  <% @today = Time.now %>
 			  <% for month in @rounds_per_month %>
-			    <li id="month_6_2008" class="bin">
+			    <li id="month_#month[:month_num]_month[:year]" class="bin">
 			       <%= link_to "<span class='badge'>#{month[:num_rounds]}</span> #{month[:month]} #{month[:year]} ", 
 								url_for(:m => month[:month_num], :y => month[:year]), :class => "" %>
 			    </li>
 			  <% end %>
 			</ul>
-			<div style="color:red;">
-			   <%- for month in @rounds_hash -%>
-			     rounds: <%= month.num_rounds %>; month: <%= month.month_num %>; year <%= month.year_num %>
-			   <%- end -%>
-			</div>
 		</div>
 	</div> <!-- /sidebar -->
 	
