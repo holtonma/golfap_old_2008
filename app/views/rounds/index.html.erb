@@ -134,6 +134,11 @@
 			    </li>
 			  <% end %>
 			</ul>
+			<div style="color:red;">
+			   <%- for month in @rounds_hash -%>
+			     rounds: <%= month.num_rounds %>; month: <%= month.month_num %>; year <%= month.year_num %>
+			   <%- end -%>
+			</div>
 		</div>
 	</div> <!-- /sidebar -->
 	
