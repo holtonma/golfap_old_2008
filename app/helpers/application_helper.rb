@@ -2,7 +2,8 @@
 module ApplicationHelper
   
   def user_info #grab user info from lookup (upon login?)
-    @user_id = 2
+    @user = User.find(:all, :conditions => ["id = ?", 1])
+    @user_id = @user.id
     @state_id = 32
   end
   
