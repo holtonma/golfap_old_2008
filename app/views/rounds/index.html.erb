@@ -55,9 +55,6 @@
 		</div>
 		<div align="center"><h2>Your recent golf rounds:</h2></div>
 		<div id="main-content" class="clear">
-			<div style="border:1px solid red">
-			   
-			</div>
 			<div id="golfrounds"> <%# events %>
 			  <ul class="data golfrounds">
 					<% for round in @my_round_details %>
@@ -72,7 +69,8 @@
 					        url_for(:m => round.date_played.month, :y => round.date_played.year) %>
 					    at <%= round.course.name %>
 					    <div style="border: 0px dotted silver;text-align:right;">
-						    <b>onesome:</b> <a href="">[enter playing partners]</a>
+						    <b>onesome:</b>
+						    <a href="">[enter playing partners]</a>
 						  </div>
 							<p class="day-break">
 								<span class="day"><%= @daynames[round.date_played.wday] %></span>
@@ -80,7 +78,10 @@
 									<% if (round.date_played.year < Time.now.year) %>'<%= round.date_played.year.to_s[2,2] %><% end %>
 								</span>
 							</p>
-							<span class="rtype rpractice">practice</span>
+							<%# class_name = "r#{round.round_type.name.downcase}" %>
+							<span class="rtype <%= "r#{round.round_type.name.downcase}" %> ">
+							  <%= round.round_type.name.downcase %>
+							</span>
 					  </li>
 					<% end %>
 				<ul class="data golfrounds">

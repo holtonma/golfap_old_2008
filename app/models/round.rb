@@ -2,7 +2,8 @@ class Round < ActiveRecord::Base
   
   belongs_to :user #yes! ...potentially many rounds belong to just 1 user
   belongs_to :course #yes!... potentially many rounds belong to just 1 course... 
-  
+  belongs_to :round_type # potentially many rounds belong to just 1 type
+  has_many :foursomes
   
   #belongs_to :course 
   #has_one :courses, :class_name => "Course", :foreign_key => "course_id" #each round has just one course
