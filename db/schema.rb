@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 16) do
+ActiveRecord::Schema.define(:version => 23) do
 
   create_table "clubs", :force => true do |t|
     t.datetime "date_saved"
@@ -72,6 +72,22 @@ ActiveRecord::Schema.define(:version => 16) do
     t.text     "body"
   end
 
+  create_table "foursomes", :force => true do |t|
+    t.integer  "round_id"
+    t.integer  "user_id"
+    t.integer  "friend_user_id"
+    t.string   "friend_lname"
+    t.string   "friend_fname"
+    t.string   "friend_email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "friends", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "instructors", :force => true do |t|
     t.string   "name"
     t.string   "description"
@@ -79,6 +95,11 @@ ActiveRecord::Schema.define(:version => 16) do
     t.integer  "zip"
     t.string   "url"
     t.integer  "course_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "leaderboards", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -111,6 +132,11 @@ ActiveRecord::Schema.define(:version => 16) do
     t.integer  "updown_opps"
   end
 
+  create_table "settings", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "strokes", :force => true do |t|
     t.integer "user_id"
     t.integer "round_id"
@@ -132,6 +158,11 @@ ActiveRecord::Schema.define(:version => 16) do
     t.integer "active",             :limit => 6,  :default => 0,  :null => false
   end
 
+  create_table "tournaments", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "fname"
     t.string   "lname"
@@ -142,6 +173,7 @@ ActiveRecord::Schema.define(:version => 16) do
     t.integer  "send_email"
     t.string   "salt"
     t.string   "hashed_password"
+    t.integer  "state_id"
   end
 
 end

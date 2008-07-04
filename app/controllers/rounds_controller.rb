@@ -14,8 +14,12 @@ class RoundsController < ApplicationController
     #sometimes      : /players/:player_id/rounds?m=6&y=2008
     @month = params[:m] || Time.now
     @year = params[:y] || Time.now
+    @all_months = %w(January February March April May June July 
+      August September October November December)
+    @daynames = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
     @rounds_per_month = Round.rounds_per_month_desc
     @rounds_hash = Round.db_rounds_per_month_year
+    @my_round_details = Round.last_n_rounds(@user_id, 10) #last 10 rounds
   end
 
   def show

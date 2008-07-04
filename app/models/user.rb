@@ -1,15 +1,16 @@
 class User < ActiveRecord::Base
+  
+  has_many :rounds
+  #has_many :friends
+  #has_many :clubsets
+  #has_many :coaches
+  #has_many :diaries
+  #has_many :instructors
+  
   validates_presence_of  :fname
   validates_presence_of  :lname
   validates_presence_of  :email
   validates_uniqueness_of :email
-  
-  has_many :rounds
-  #has_many :friends
-  has_many :clubsets
-  has_many :coaches
-  has_many :diaries
-  has_many :instructors
   
   attr_accessor :password_confirmation
   validates_confirmation_of :password

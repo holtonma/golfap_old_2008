@@ -55,7 +55,34 @@
 		</div>
 		<div align="center"><h2>Your recent golf rounds:</h2></div>
 		<div id="main-content" class="clear">
+			<div style="border:1px solid red">
+			   
+			</div>
 			<div id="golfrounds"> <%# events %>
+			  <ul class="data golfrounds">
+					<% for round in @my_round_details %>
+					  <li class="golfround clear"> 
+						  <%= image_tag(url_for_gravatar("holtonma@gmail.com"), :class => "avatar", :alt => "") %>  
+					    <% if (round.total_score > round.course.total_par) %>
+					      <% plusminus = "+ #{(round.total_score - round.course.total_par)}"%>
+					    <% else %>
+					      <% plusminus = "#{(round.total_score - round.course.total_par)}"%>
+						  <% end %> 
+					    <%= link_to "#{round.total_score} (#{plusminus})", 
+					        url_for(:m => round.date_played.month, :y => round.date_played.year) %>
+					    at <%= round.course.name %>
+					    <div style="border: 0px dotted silver;text-align:right;">
+						    <b>onesome:</b> <a href="">[enter playing partners]</a>
+						  </div>
+							<p class="day-break">
+								<span class="day"><%= @daynames[round.date_played.wday] %></span>
+								<span class="num"><%= @all_months[round.date_played.month-1] %> <%= round.date_played.mday %>
+									<% if (round.date_played.year < Time.now.year) %>'<%= round.date_played.year.to_s[2,2] %><% end %>
+								</span>
+							</p>
+							<span class="rtype rpractice">practice</span>
+					  </li>
+					<% end %>
 				<ul class="data golfrounds">
 					<li class="golfround clear">
 						<a href="">
@@ -118,10 +145,10 @@
 	  <div id="months-block" class="sideblock">
 		  <h3>GolfAp Rounds Last 12 Months</h3>
 		  <ul id="user-months" class="stacked wbadges">
-			  <% for month in @rounds_per_month %>
-			    <li id="month_#month[:month_num]_month[:year]" class="bin">
-			       <%= link_to "<span class='badge'>#{month[:num_rounds]}</span> #{month[:month]} #{month[:year]} ", 
-								url_for(:m => month[:month_num], :y => month[:year]), :class => "" %>
+			  <% for round in @rounds_per_month %>
+			    <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+			       <%= link_to "<span class='badge'>#{round[:num_rounds]}</span> #{round[:month]} #{round[:year]} ", 
+								url_for(:m => round[:month_num], :y => round[:year]), :class => "" %>
 			    </li>
 			  <% end %>
 			</ul>

@@ -1,11 +1,25 @@
 class Round < ActiveRecord::Base
   
-  has_one :course
-  has_one :user
-  has_many :foursomes
+  belongs_to :user #yes! ...potentially many rounds belong to just 1 user
+  belongs_to :course #yes!... potentially many rounds belong to just 1 course... 
   
-  def last_ten_rounds
-    Round.find(:all, :limit => 10, :order => "DESC")
+  
+  #belongs_to :course 
+  #has_one :courses, :class_name => "Course", :foreign_key => "course_id" #each round has just one course
+  #has_many :foursomes
+  
+  def self.last_n_rounds(user_id, n=10)
+    Round.find(:all, :conditions => ["rounds.user_id = ?", user_id], 
+               :joins => "LEFT JOIN courses ON rounds.course_id = courses.id",
+               :limit => "#{n}", :order => "date_played DESC") 
+  end
+  
+  def self.output_over_under_par(course_par, score)
+    if (score > course_par)
+      return "+ #{(score - course_par).to_s}"
+    else
+      return (score - course_par).to_s
+    end
   end
   
   def self.db_rounds_per_month_year
