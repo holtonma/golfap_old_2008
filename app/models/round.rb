@@ -11,7 +11,7 @@ class Round < ActiveRecord::Base
   
   def self.last_n_rounds(user_id, n=10)
     Round.find(:all, :conditions => ["rounds.user_id = ?", user_id], 
-               :joins => "LEFT JOIN courses ON rounds.course_id = courses.id",
+               #:joins => "LEFT JOIN courses ON rounds.course_id = courses.id",
                :limit => "#{n}", :order => "date_played DESC") 
   end
   

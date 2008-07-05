@@ -69,8 +69,17 @@
 					        url_for(:m => round.date_played.month, :y => round.date_played.year) %>
 					    at <%= round.course.name %>
 					    <div style="border: 0px dotted silver;text-align:right;">
-						    <b>onesome:</b>
-						    <a href="">[enter playing partners]</a>
+						    <b><%= round.foursomes.length + 1 %>-some:</b>
+						    <%# unless round.foursomes == nil %>
+						      <% for foursome in round.foursomes %>
+						    		<a href="">
+							        <%= foursome.user.fname unless (foursome.user == nil) %>
+						          <%= foursome.user.lname unless (foursome.user == nil) %>
+						          <%= foursome.friend_fname if (foursome.friend_user_id == -1)%>
+						          <%= foursome.friend_fname if (foursome.friend_user_id == -1)%>
+						        </a>
+						      <% end %>
+						    <%# end %> 
 						  </div>
 							<p class="day-break">
 								<span class="day"><%= @daynames[round.date_played.wday] %></span>
