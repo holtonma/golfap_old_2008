@@ -68,19 +68,39 @@
 					    <%= link_to "#{round.total_score} (#{plusminus})", 
 					        url_for(:m => round.date_played.month, :y => round.date_played.year) %>
 					    at <%= round.course.name %>
+					
 					    <div style="border: 0px dotted silver;text-align:right;">
 						    <b><%= round.foursomes.length + 1 %>-some:</b>
-						    <%# unless round.foursomes == nil %>
-						      <% for foursome in round.foursomes %>
-						    		<a href="">
-							        <%= foursome.user.fname unless (foursome.user == nil) %>
-						          <%= foursome.user.lname unless (foursome.user == nil) %>
-						          <%= foursome.friend_fname if (foursome.friend_user_id == -1)%>
-						          <%= foursome.friend_fname if (foursome.friend_user_id == -1)%>
-						        </a>
-						      <% end %>
-						    <%# end %> 
+						
+						        <% friends_href = "" %>
+						        <% invite_friend_href = "" %>
+						
+						      	<% for foursome in round.foursomes %>
+							        
+							        <% if foursome.user == nil %>
+							          <%# no official friend foursome entered, but friend's first and lastname entered  %>
+							          <% if (foursome.friend_user_id == -1) %>
+												  <%= foursome.friend_fname %> <%= foursome.friend_lname %>
+												  <%= link_to "(invite)",
+												              "#{invite_friend_href}?lname=#{foursome.friend_lname}&fname=#{foursome.friend_fname}" 
+												  %>
+												<% end %>
+							        <% else %>
+							          <!-- output members of foursome as you loop -->
+												<%= link_to "#{foursome.user.fname} #{foursome.user.lname}", "/" unless (foursome.user == nil) %>
+							        <% end %>
+							
+							      <% end %>
+							
+							      <% if (round.foursomes.length == 0) %>
+							        <%= link_to "[enter partners]", "#{friends_href}" %>
+							      <% elsif round.foursomes.length == 3 %>
+							        <%= link_to "[edit partners]", "#{friends_href}" %>
+							      <% else %>
+							        <%= link_to "[enter partners]", "#{friends_href}" %>
+							      <% end %>
 						  </div>
+						
 							<p class="day-break">
 								<span class="day"><%= @daynames[round.date_played.wday] %></span>
 								<span class="num"><%= @all_months[round.date_played.month-1] %> <%= round.date_played.mday %>
@@ -93,53 +113,10 @@
 							</span>
 					  </li>
 					<% end %>
-				<ul class="data golfrounds">
-					<li class="golfround clear">
-						<a href="">
-							<%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
-						</a>
-						<a title="" href="">88 (+16)</a> at Druid's Glen Golf Club.
-						<div style="border: 0px dotted silver;text-align:right;"><b>onesome:</b> <a href="">[enter playing partners]</a></div>
-						<p class="day-break"><span class="day">Saturday</span><span class="num">June 5th</span></p>
-						<span class="rtype rpractice">practice</span>
-					</li>
-					<li class="golfround clear">
-						<%#<a href=''><img class='avatar' src='/images/avatar.gif' alt='' border="0"></a> %>
-						<%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %>
-						<a title="" href="">87 (+15)</a> at Druid's Glen Golf Club.
-						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
-							<span>
-								<b>threesome:</b> <a href="">Tim Parker</a>, Tom Mino ( <a href="">invite</a> )
-							</span>
-						</div>
-						<p class="day-break">
-							<span class="day">Sunday</span>
-							<span class="num">June 6th</span>
-						</p>
-						<span class="rtype rtournament">
-							tournament
-						</span>
-					</li>
-					<li class="golfround clear">
-						<a href=""><%= image_tag(url_for_gravatar(@gravatar_email), :class => "avatar", :alt => "") %></a>
-						<a title="" href="">83 (+11)</a> at Legion Memorial Golf Club
-						<div style="border: 0px dotted silver;text-align:right;display:block;" align="right">
-							<span>
-								<b>threesome:</b> <a href="">Tim Parker</a>, Tom Mino ( <a href="">invite</a> )
-							</span>
-						</div>
-						<p class="day-break">
-							<span class="day">Sunday</span>
-							<span class="num">June 13th</span>
-						</p>
-						<span class="rtype rtournament">
-							tournament
-						</span>
-					</li>
-				</ul>
 			</div> <!-- golf rounds -->
 		</div> <!-- main content-->
   </div> <!-- main -->
+
   <div id="sidebar">
 	  <div class="side_description">Use these sidebar hotlinks to locate groups of rounds</div>
 	  <div class="sideblock">
