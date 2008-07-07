@@ -19,6 +19,10 @@ class User < ActiveRecord::Base
     errors.add_to_base("Missing password") if hashed_password.blank?
   end
   
+  def self.user_info(user_id)
+    User.find(:first, :conditions => ["users.id = ?", user_id])
+  end
+  
   def self.authenticate(name, password)
     user = self.find_by_name(name)
     if user
@@ -29,6 +33,8 @@ class User < ActiveRecord::Base
     end
     user
   end
+  
+  
   
   #'password' is a virtual attribute
   def password

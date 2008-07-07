@@ -9,10 +9,16 @@ class Round < ActiveRecord::Base
   #has_one :courses, :class_name => "Course", :foreign_key => "course_id" #each round has just one course
   #has_many :foursomes
   
+# Round.index
   def self.last_n_rounds(user_id, n=10)
-    Round.find(:all, :conditions => ["rounds.user_id = ?", user_id], 
-               #:joins => "LEFT JOIN courses ON rounds.course_id = courses.id",
+    Round.find(:all, :conditions => ["rounds.user_id = ?", user_id], #:joins => "LEFT JOIN courses ON rounds.course_id = courses.id",
                :limit => "#{n}", :order => "date_played DESC") 
+  end
+  
+  def self.specific_month_rounds(user_id, year_num, month_num)
+    Round.find(:all, :conditions => ["rounds.user_id = ? AND EXTRACT(YEAR FROM date_played) = ? 
+                                      AND EXTRACT(MONTH FROM date_played) = ?", user_id, year_num.to_i, month_num.to_i], 
+                                      :order => "date_played DESC") 
   end
   
   def self.output_over_under_par(course_par, score)
@@ -24,7 +30,7 @@ class Round < ActiveRecord::Base
   end
   
   def self.db_rounds_per_month_year
-    # num_rounds month_num year_num
+    # num_rounds month_num year_num ( dat for side bar aggregate links )
     rounds_by_month_year = Round.find(:all, 
       :select => "Count(*) as num_rounds, EXTRACT(MONTH FROM date_played) as month_num,  EXTRACT(YEAR FROM date_played) as year_num", 
       :group => "EXTRACT(YEAR FROM date_played), EXTRACT(MONTH FROM date_played)",
@@ -34,7 +40,7 @@ class Round < ActiveRecord::Base
     rounds_by_month_year
   end
   
-  def self.rounds_per_month_desc
+  def self.rounds_per_month_desc #assembles into preferred hash 
     # select Count(*), EXTRACT(MONTH FROM date_played),  EXTRACT(YEAR FROM date_played) 
     # from rounds GROUP BY EXTRACT(YEAR FROM date_played), EXTRACT(MONTH FROM date_played)
     @all_months = %w(January February March April May June July 
@@ -53,5 +59,11 @@ class Round < ActiveRecord::Base
     
     @rounds_per_month
   end
-  
+
+#Round.show (specific rounds)
+  def self.grab_round(round_id)
+    Round.find(:first, :conditions => ["rounds.id = ?", round_id])
+  end
+    
+      
 end

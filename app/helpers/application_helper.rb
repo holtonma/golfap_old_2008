@@ -3,6 +3,7 @@ module ApplicationHelper
   
   def user_info #grab user info from lookup (upon login?)
     user_id_from_authentication = 1 #replace this with logic from SESSION
+    
     # u = User.new
     # @user = u.find(1, :conditions => ["id = ?", user_id_from_authentication])
     @user_id = user_id_from_authentication #@user.id

@@ -1,8 +1,5 @@
 <% @name = "Mark Holton" %>
 <% @num_rounds = 3 %>
-<% @playing_partner = [] %>
-<% @playing_partner[1] = "Tim Parker" %>
-<% @playing_partner[2] = "Tom Mino" %>
 <% @gravatar_email = 'holtonma@gmail.com' %>
 
 	<div id="main">
@@ -66,7 +63,7 @@
 					      <% plusminus = "#{(round.total_score - round.course.total_par)}"%>
 						  <% end %> 
 					    <%= link_to "#{round.total_score} (#{plusminus})", 
-					        url_for(:m => round.date_played.month, :y => round.date_played.year) %>
+					        player_round_path(@user_id, round.id) %>
 					    at <%= round.course.name %>
 					
 					    <div style="border: 0px dotted silver;text-align:right;">
