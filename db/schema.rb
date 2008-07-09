@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 27) do
+ActiveRecord::Schema.define(:version => 28) do
 
   create_table "clubs", :force => true do |t|
     t.datetime "date_saved"
@@ -42,6 +42,18 @@ ActiveRecord::Schema.define(:version => 27) do
     t.datetime "updated_at"
   end
 
+  create_table "course_tees", :force => true do |t|
+    t.integer  "course_id"
+    t.string   "tee_name"
+    t.integer  "yardage"
+    t.float    "rating"
+    t.integer  "slope"
+    t.integer  "num_holes"
+    t.integer  "total_par"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "courseholes", :force => true do |t|
     t.integer  "course_id"
     t.integer  "par"
@@ -58,10 +70,7 @@ ActiveRecord::Schema.define(:version => 27) do
     t.string   "phone"
     t.string   "city"
     t.string   "state"
-    t.integer  "rating",     :limit => 10, :precision => 10, :scale => 0
-    t.integer  "slope"
     t.integer  "num_holes"
-    t.integer  "total_par"
     t.datetime "date_added"
   end
 

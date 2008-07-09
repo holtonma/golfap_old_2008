@@ -7,7 +7,7 @@ class CreateCourses < ActiveRecord::Migration
       t.column :phone, :string
       t.column :city, :string
       t.column :state, :string
-      t.column :rating, :decimal
+      t.column :rating, :double
       t.column :slope, :integer
       t.column :num_holes, :integer
       t.column :total_par, :integer
