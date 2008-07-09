@@ -40,7 +40,15 @@ class RoundsController < ApplicationController
     @player_id = params[:player_id]
     
     @round = Round.grab_round(@round_id)
-    
+    @course = Course.grab_course(@round.course_id)
+    @course_holes = Course.grab_holes(1) #need to change this to: @round.course_tee_id
+    @course_tee = Course.summary_info(1) #need to change this to: @round.course_tee_id
+    @out = {}; @in = {};
+    @out[:yardage] = 0
+    @out[:par] = 0
+    @in[:yardage] = 0
+    @in[:par] = 0
+    @front_nine_yardage = 0
     #refactor 
     @month = params[:m] || -1
     @year = params[:y] || -1

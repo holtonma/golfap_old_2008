@@ -60,11 +60,12 @@
 		</div>
 		
 		<div id="mygolfround" class="clear" style="clear:left;"> <%# events %>
+			<div style="border: 0px solid red;"></div>
 		  <div id="scorecard">
 			  <table class="scorecard">
 				  <tbody>
 				  	<tr>
-					    <td colspan="22">[ gravatar ] - [ name ] - [ golf course name ] - [ round date ]</td>
+					    <td colspan="22">[ gravatar ] - [ name ] - <%= @course.name %> - [ round date ]</td>
 					  <tr>
 						<tr>
 							  <td>hole: </td>
@@ -81,26 +82,28 @@
 						<tr>
 							  <td>yardage: </td>
 							<% 9.times do |hole_ind| %>
-							  <td><%= hole_ind + 1 %></td>
+							  <td><%= @course_holes[hole_ind + 1].yardage %></td>
+							  <% @out[:yardage] = @out[:yardage] + @course_holes[hole_ind + 1].yardage %>
 							<% end %>
-							  <td></td>
+							  <td><%= @out[:yardage] %></td>
 							<% 9.times do |hole_ind| %>
-								<td><%= hole_ind + 10 %></td>
+								<td><%= @course_holes[hole_ind + 1].yardage %></td>
+								<% @in[:yardage] = @in[:yardage] + @course_holes[hole_ind + 1].yardage %>
 							<% end %>
-							  <td></td>
-							  <td></td>
+							  <td><%= @in[:yardage] %></td>
+							  <td><%= @course_tee.yardage %></td>
 						</tr>
 						<tr>
 							  <td>par: </td>
 							<% 9.times do |hole_ind| %>
-							  <td><%= hole_ind + 1 %></td>
+							  <td><%= @course_holes[hole_ind + 1].par %></td>
 							<% end %>
 							  <td></td>
 							<% 9.times do |hole_ind| %>
-								<td><%= hole_ind + 10 %></td>
+								<td><%= @course_holes[hole_ind + 1].par %></td>
 							<% end %>
 							  <td></td>
-							  <td></td>
+							  <td><%= @course_tee.total_par %></td>
 						</tr>
 						<tr>
 							  <td>score: </td>

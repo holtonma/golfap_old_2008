@@ -57,10 +57,10 @@
 					<% for round in @my_round_details %>
 					  <li class="golfround clear"> 
 						  <%= image_tag(url_for_gravatar("holtonma@gmail.com"), :class => "avatar", :alt => "") %>  
-					    <% if (round.total_score > round.course.total_par) %>
-					      <% plusminus = "+ #{(round.total_score - round.course.total_par)}"%>
+					    <% if (round.total_score > 0) %> <%# round.course.total_par %>
+					      <% plusminus = "+ #{(round.total_score - 0)}"%> <%# round.course.total_par instead of 0%>
 					    <% else %>
-					      <% plusminus = "#{(round.total_score - round.course.total_par)}"%>
+					      <% plusminus = "#{(round.total_score - 0)}"%>
 						  <% end %> 
 					    <%= link_to "#{round.total_score} (#{plusminus})", 
 					        player_round_path(@user_id, round.id) %>
