@@ -70,7 +70,9 @@ class RoundsController < ApplicationController
   end
 
   def new
-    
+    @player_id = params[:player_id]
+    @round = Round.new
+    @courses = Course.find(:all)
   end
 
   def edit
@@ -81,5 +83,21 @@ class RoundsController < ApplicationController
 
   def destroy
   end
+  
+  def update_course_tees
+    # course_tees GET    
+    # /courses/:course_id/tees                                                           
+    # {:controller=>"tees", :action=>"index"}
+    
+    #updates course_tees based on Course selected
+    course = Course.find(params[:course_id])
+    tees = course.course_tees
+    
+    render :update do |page|
+      page.replace_html 'tees', :partial => 'course_tees', :object => tees
+    end
+    
+  end
+  
   
 end

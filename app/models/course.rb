@@ -4,6 +4,7 @@ class Course < ActiveRecord::Base
   has_many :rounds
   
   has_many :courseholes
+  has_many :course_tees
   
   def self.grab_course course_id
     Course.find(:first, :conditions => ["courses.id = ?", course_id])

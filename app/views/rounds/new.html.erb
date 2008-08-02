@@ -1,2 +1,184 @@
-<h1>Rounds#new</h1>
-<p>Find me in app/views/rounds/new.html.erb</p>
+<div id="main">
+	<span id="loading"></span>
+	<div id="subtab-nav">
+		<ul><!-- class="subnav secondlevel"-->
+			<li id="t-roundmain" class="selected">
+				<a>
+				  <%= Time.now %>
+				  2008 [date picker]
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="detail-nav">
+		<ul class="clear">
+			<%# new_player_round GET  /players/:player_id/rounds/new   {:controller=>"rounds", :action=>"new"} %>
+			<li>
+				<!-- <a href="">Last 10 Rounds</a> -->
+				<%= link_to "Summary", "/", :class => "selected" %> <!-- url_for(:n => 10) -->
+			  <%# url_for(:id => "foo", :foobar => 200, :baz => "23k")%>
+			</li>
+			<li><a href="">Hole-by-hole</a></li>
+		</ul>
+	</div>
+	
+	<div id="flashes">
+		<!-- -->
+	</div>
+	
+	<div id="page-top">
+		<div align="center"><h2>Enter New Round:</h2></div>
+	  <div class="greet clear">
+		  <a href="/">
+			  <%= image_tag(url_for_gravatar(@user.email), :class => "avatar", :alt => "", :size => "48x48") %>
+			</a>
+		  <h3 class="nameplate"><%= @user.fname %> <%= @user.lname %></h3>
+			<p class="gmeta" style="float:right;"></p>
+		</div>
+	</div>
+
+  <div>
+    <div class="sel_element" id="courses">course:
+	    <%# select("get", "course_id", @courses.collect {|c| [c.name, c.id]}, {:include_blank => true })%>
+	    <%= 
+	      collection_select(nil, :courses, @courses, :id, :name, {:include_blank => true },
+	      {:prompt => "Select a Course"})
+	    %>
+	    <%#
+	      {:onchange => "#{remote_function(:url => {:action => "course_tees"}, :with => "'course_id='+value")}"})
+	    %>
+	    <%# link_to "add new", "/" %>
+	  </div>
+	  <div class="sel_element" id="tees">tees:&nbsp;&nbsp;&nbsp;
+		  <%# collection_select :course_tee, :%>
+		  <select id="_tees"></select>
+		</div>
+	</div> <!-- main content-->
+
+</div> <!-- main -->
+
+
+<div id="sidebar">
+  <div class="side_description">Use these sidebar hotlinks to locate groups of rounds</div>
+  <div class="sideblock">
+  	<h3>Tags for this round&nbsp;&nbsp;</h3> <div><a href="">add tag..</a></div>
+    <ul id="tag-list">
+	    <li><a title="druids" rel="tag" href="">druids</a></li>
+			<li><a title="windy" rel="tag" href="">windy</a></li>
+		  <li><a title="winterrules" rel="tag" href="">winterrules</a></li>
+		  <li><a title="fall" rel="tag" href="">fall</a></li>
+		  <li><a title="carry_bag" rel="tag" href="">carry_bag</a></li>
+	  </ul>
+  </div>
+  <div id="months-block" class="sideblock">
+	  <h3>"What if" this round had...</h3>
+	  <ul id="user-months" class="stacked wbadges">
+		 <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+		    <%= link_to "<span class=''>zero 3 putts</span>", 
+						"", :class => "" %>
+		 </li>
+		 <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+		   	<%= link_to "<span class=''>zero penalties</span>", 
+						"", :class => "" %>
+		 </li>
+		 <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+		   	<%= link_to "<span class=''>zero &quot;others&quot;</span>", 
+						"", :class => "" %>
+		 </li>
+		 <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+		   	<%= link_to "<span class=''>50% up and down</span>", 
+						"", :class => "" %>
+		 </li>
+		 <li id="month_#{round[:month_num]}_#{round[:year]}" class="bin">
+		   	<%= link_to "<span class=''>27 putts</span>", 
+						"", :class => "" %>
+		 </li>
+		
+		</ul>
+		<h4>(it's possible.  get to work and make it happen!)</h4>
+	</div>
+</div> <!-- /sidebar -->
+
+<script type="text/javascript">
+
+<%#
+/*
+function populateSel(selElemID, elements){
+	var selElem = $(selElemID);
+	selElem.options.length = 0;
+	//elements : array of JSON objects containing ID and TEXT
+	elements.each(function(e){
+		var opt = document.createElement('option');
+		opt.text = e.TEXT;
+		opt.value = e.ID;
+		//append the option (cross-browser)
+		try {
+			selElem.add(opt, null); //standards compliant; doesn't work in IE
+		} catch(ex) {
+			selElem.add(optNew); // IE only;
+		}
+	});
+} 
+*/%>
+
+function populateTees(tees){
+	//var sel = document.createElement("select");
+	//sel.id = "_tees";
+	var teeElem = $('_tees');
+	teeElem.options.length = 0;
+	var blank_opt = document.createElement('option');
+	blank_opt.text = "select tees";
+	blank_opt.value = -1;
+	try {
+		teeElem.add(blank_opt, null); //standards compliant; doesn't work in IE
+	} catch(ex) {
+		teeElem.add(blank_opt); // IE only;
+	}
+	//elements : array of JSON objects containing ID and TEXT
+	tees.each(function(t){
+		var opt = document.createElement('option');
+		/*
+		{"slope": 114, "rating": 70.1, "updated_at": "2008/07/08 19:04:12 -0700", "tee_name": "Blue", "yardage": 6632, "id": 2, "num_holes": 18, "course_id": 2, "total_par": 72, "created_at": "2008/07/08 19:04:12 -0700"}
+		*/
+		var info = t.tee_name + " " + "par:" + t.total_par + " yardage:" + t.yardage + " (" + t.rating + "/" + t.slope + ")"
+		opt.text = info;
+		opt.value = t.id;
+		console.log("text: ", opt.text);
+		console.log("id: ", opt.id);
+		//append the option (cross-browser)
+		try {
+			teeElem.add(opt, null); //standards compliant; doesn't work in IE
+		} catch(ex) {
+			teeElem.add(opt); // IE only;
+		}
+	});
+}
+
+function selectCourse(){
+	// make an Ajax.Request to the RESTful URL
+	$('loading').show();
+	$('loading').innerHTML = "loading tees...";
+	var courseID = $('_courses').value;
+	var url = "/courses/" + courseID.toString() + "/tees.json";
+	new Ajax.Request(url, 
+	  {
+		  method: 'Get',
+		  asynchronous: true,
+		  onComplete: function(transport){
+			  console.log("final Ajax callback fn");
+			  var json = transport.responseText.evalJSON(true);
+				console.log("json returned...: ", json);
+				populateTees(json);
+				$('loading').hide();
+			//Event.observe('sel_Tees', 'change', selectTees.bind($('sel_Tees')));
+		  }
+	  }
+	)
+}
+
+
+Event.observe(window, 'load', function(){
+	Event.observe('_courses', 'change', selectCourse.bind($('_courses')));
+	$('loading').hide();
+})
+</script>

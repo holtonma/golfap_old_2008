@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 28) do
+ActiveRecord::Schema.define(:version => 31) do
 
   create_table "clubs", :force => true do |t|
     t.datetime "date_saved"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(:version => 28) do
     t.integer  "holenum"
     t.integer  "handicap"
     t.datetime "date_added"
+    t.integer  "course_tee_id"
   end
 
   create_table "courses", :force => true do |t|
@@ -160,6 +161,13 @@ ActiveRecord::Schema.define(:version => 28) do
     t.integer "club_id"
     t.integer "from"
     t.integer "ended_up"
+  end
+
+  create_table "subscriptions", :force => true do |t|
+    t.string   "name"
+    t.string   "descrip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "tgolfer", :primary_key => "GolferID", :force => true do |t|

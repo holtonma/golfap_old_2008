@@ -57,6 +57,10 @@ ActionController::Routing::Routes.draw do |map|
     end
   end
   
+  map.resources :courses do |courses|
+    courses.resources :tees do |tees|; end
+  end
+  
   #settings
   map.resources :settings do |settings|
   end

@@ -1283,6 +1283,20 @@ span .val{
 	background-color:#F4F4F4;
 }
 
+.sel_element{
+	padding: 5px;
+	padding-left: 15px;
+}
+
+#loading{
+	position:absolute;
+	top:0px;
+	right:0px;
+	background-color:#880000;
+	color:#EFEFEF;
+	padding: 4px;
+}
+
 
 
 
