@@ -18,4 +18,15 @@ class TeesController < ApplicationController
     # end
   end
   
+  def show
+    # formatted_course_tee GET    /courses/:course_id/tees/:id.:format  {:controller=>"tees", :action=>"show"}
+    # grab the tees
+    tee_info = CourseTee.find(params[:id])
+    
+    respond_to do |format|
+      format.json  { render :json => tee_info }
+    end
+  end
+  
+  
 end

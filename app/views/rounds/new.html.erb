@@ -124,7 +124,14 @@ function populateSel(selElemID, elements){
 function populateTees(tees){
 	//var sel = document.createElement("select");
 	//sel.id = "_tees";
-	var teeElem = $('_tees');
+	// only create it and attach observer if it doesn't already exist
+	if ( $('_tees') ){
+		console.log("tees already exists");
+		var teeElem = $('_tees');
+	} else {
+		var teeElem = $('_tees');
+	}
+	
 	teeElem.options.length = 0;
 	var blank_opt = document.createElement('option');
 	blank_opt.text = "select tees";
@@ -176,9 +183,36 @@ function selectCourse(){
 	)
 }
 
+function selectTees(){
+	$('loading').show();
+	$('loading').innerHTML = "loading round summary form...";
+	var teeID = $('_tees').value;
+	console.log("teeID: ", teeID);
+	// once a tee is selected, render the partial for score summary
+	var url = "/courses/" + $('_courses').value.toString() + "/tees/" + teeID.toString() + ".json";
+	// formatted_course_tee GET    /courses/:course_id/tees/:id.:format  {:controller=>"tees", :action=>"show"}
+	
+	new Ajax.Request(url, 
+	  {
+		  method: 'Get',
+		  asynchronous: true,
+		  onComplete: function(transport){
+			  console.log("final Ajax callback fn for tees");
+			  var json = transport.responseText.evalJSON(true);
+				console.log("json returned...: ", json);
+				//populateTees(json);
+				$('loading').hide();
+			//Event.observe('sel_Tees', 'change', selectTees.bind($('sel_Tees')));
+		  }
+	  }
+	)
+	$('loading').hide();
+}
+
 
 Event.observe(window, 'load', function(){
 	Event.observe('_courses', 'change', selectCourse.bind($('_courses')));
+	Event.observe('_tees', 'change', selectTees.bind($('_tees')));
 	$('loading').hide();
 })
 </script>

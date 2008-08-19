@@ -30,7 +30,6 @@ class RoundsController < ApplicationController
     else
       @my_round_details = Round.specific_month_rounds(@user_id, @year, @month)
     end
-    
   end
 
   def show
